@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://frankbraun.org/notes/go-libs/</loc>
+    <loc>http://frankbraun.org/note/go-libs/</loc>
     <lastmod>2017-05-09T16:00:04+00:00</lastmod>
   </url>
   
@@ -18,7 +18,7 @@
   </url>
   
   <url>
-    <loc>http://frankbraun.org/notes/</loc>
+    <loc>http://frankbraun.org/note/</loc>
     <lastmod>2017-05-09T16:00:04+00:00</lastmod>
     <priority>0</priority>
   </url>

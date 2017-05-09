@@ -13,10 +13,10 @@
     
     <item>
       <title>Go libraries</title>
-      <link>http://frankbraun.org/notes/go-libs/</link>
+      <link>http://frankbraun.org/note/go-libs/</link>
       <pubDate>Tue, 09 May 2017 16:00:04 +0000</pubDate>
       
-      <guid>http://frankbraun.org/notes/go-libs/</guid>
+      <guid>http://frankbraun.org/note/go-libs/</guid>
       <description> Command line  https://github.com/spf13/cobra  Testing  https://github.com/stretchr/testify  </description>
     </item>
     
