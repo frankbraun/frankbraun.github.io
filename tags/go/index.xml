@@ -1,25 +1,27 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Frank Braun</title>
-    <link>http://frankbraun.org/tags/</link>
-    <description>Recent content in Tags on Frank Braun</description>
+    <title>Go on Frank Braun</title>
+    <link>http://frankbraun.org/tags/go/</link>
+    <description>Recent content in Go on Frank Braun</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <managingEditor>frank@cryptogroup.net (Frank Braun)</managingEditor>
     <webMaster>frank@cryptogroup.net (Frank Braun)</webMaster>
     <lastBuildDate>Tue, 09 May 2017 16:00:04 +0000</lastBuildDate>
     
-	<atom:link href="http://frankbraun.org/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://frankbraun.org/tags/go/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Go</title>
-      <link>http://frankbraun.org/tags/go/</link>
+      <title>Go libraries</title>
+      <link>http://frankbraun.org/note/go-libs/</link>
       <pubDate>Tue, 09 May 2017 16:00:04 +0000</pubDate>
       <author>frank@cryptogroup.net (Frank Braun)</author>
-      <guid>http://frankbraun.org/tags/go/</guid>
-      <description></description>
+      <guid>http://frankbraun.org/note/go-libs/</guid>
+      <description>&lt;p&gt;Collection of recommended Go libraries.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

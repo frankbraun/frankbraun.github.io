@@ -6,6 +6,8 @@
     <description>Recent content in Notes on Frank Braun</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <managingEditor>frank@cryptogroup.net (Frank Braun)</managingEditor>
+    <webMaster>frank@cryptogroup.net (Frank Braun)</webMaster>
     <lastBuildDate>Tue, 09 May 2017 16:00:04 +0000</lastBuildDate>
     
 	<atom:link href="http://frankbraun.org/note/index.xml" rel="self" type="application/rss+xml" />
@@ -15,9 +17,11 @@
       <title>Go libraries</title>
       <link>http://frankbraun.org/note/go-libs/</link>
       <pubDate>Tue, 09 May 2017 16:00:04 +0000</pubDate>
-      
+      <author>frank@cryptogroup.net (Frank Braun)</author>
       <guid>http://frankbraun.org/note/go-libs/</guid>
-      <description> Command line  https://github.com/spf13/cobra  Testing  https://github.com/stretchr/testify  </description>
+      <description>&lt;p&gt;Collection of recommended Go libraries.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>
