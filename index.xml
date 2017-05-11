@@ -14,6 +14,17 @@
     
     
     <item>
+      <title>Go libraries</title>
+      <link>http://frankbraun.org/note/go-libs/</link>
+      <pubDate>Thu, 11 May 2017 00:00:00 +0000</pubDate>
+      <author>frank@cryptogroup.net (Frank Braun)</author>
+      <guid>http://frankbraun.org/note/go-libs/</guid>
+      <description>&lt;p&gt;Collection of recommended Go libraries.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Alan Kay</title>
       <link>http://frankbraun.org/quote/alan-kay/</link>
       <pubDate>Wed, 10 May 2017 00:00:00 +0000</pubDate>
@@ -196,17 +207,6 @@ mindlessly imitated.
   
 &lt;/blockquote&gt;
 
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Go libraries</title>
-      <link>http://frankbraun.org/note/go-libs/</link>
-      <pubDate>Tue, 09 May 2017 00:00:00 +0000</pubDate>
-      <author>frank@cryptogroup.net (Frank Braun)</author>
-      <guid>http://frankbraun.org/note/go-libs/</guid>
-      <description>&lt;p&gt;Collection of recommended Go libraries.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>
