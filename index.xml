@@ -14,12 +14,32 @@
     
     
     <item>
+      <title>GNU Make</title>
+      <link>http://frankbraun.org/note/make/</link>
+      <pubDate>Sat, 13 May 2017 00:00:00 +0000</pubDate>
+      <author>frank@cryptogroup.net (Frank Braun)</author>
+      <guid>http://frankbraun.org/note/make/</guid>
+      <description> https://marmelab.com/blog/2016/02/29/auto-documented-makefile.html  </description>
+    </item>
+    
+    <item>
       <title>Go libraries</title>
       <link>http://frankbraun.org/note/go-libs/</link>
-      <pubDate>Thu, 11 May 2017 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 13 May 2017 00:00:00 +0000</pubDate>
       <author>frank@cryptogroup.net (Frank Braun)</author>
       <guid>http://frankbraun.org/note/go-libs/</guid>
       <description>&lt;p&gt;Collection of recommended Go libraries.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Long-term software</title>
+      <link>http://frankbraun.org/note/tech/</link>
+      <pubDate>Sat, 13 May 2017 00:00:00 +0000</pubDate>
+      <author>frank@cryptogroup.net (Frank Braun)</author>
+      <guid>http://frankbraun.org/note/tech/</guid>
+      <description>&lt;p&gt;Collection of software that matters in the long-term.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>
