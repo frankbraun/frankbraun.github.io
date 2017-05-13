@@ -4,28 +4,32 @@
     <meta name="generator" content="Hugo 0.21-DEV" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Go | Frank Braun</title>
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <title>Go tools | Frank Braun</title>
+    <meta name="description" content="Collection of recommended Go tools.
+
+">
+    <meta name="keywords" content="Go">
     
     
     
-    
-      <meta name="robots" content="noindex">
     
     
 
   <meta name="author" content="">
 
 
-    <meta property="og:title" content="Go" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="http://frankbraun.org/tags/go/" />
+    <meta property="og:title" content="Go tools" />
+<meta property="og:description" content="Collection of recommended Go tools.
+
+" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://frankbraun.org/note/go-tools/" />
 
 
 
-<meta property="og:updated_time" content="2017-05-13T00:00:00&#43;00:00"/>
+<meta property="article:published_time" content="2017-05-13T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2017-05-13T00:00:00&#43;00:00"/>
+
 
 
 
@@ -46,9 +50,7 @@
     
     
     
-      <link href="http://frankbraun.org/tags/go/index.xml" rel="alternate" type="application/rss+xml" title="Frank Braun" />
-    
-    <link rel="canonical" href="http://frankbraun.org/tags/go/">
+    <link rel="canonical" href="http://frankbraun.org/note/go-tools/">
     
     
     <link rel="icon" sizes="any" href="/favicon.svg">
@@ -130,7 +132,7 @@ article [itemprop="description"] {
     
       <a itemprop="url" class="" href="/"><span itemprop="name">Home</span></a>
     
-      <a itemprop="url" class="" href="/note/"><span itemprop="name">Notes</span></a>
+      <a itemprop="url" class="active" href="/note/"><span itemprop="name">Notes</span></a>
     
       <a itemprop="url" class="" href="/quote/"><span itemprop="name">Quotes</span></a>
     
@@ -140,101 +142,29 @@ article [itemprop="description"] {
 </header>
     <main>
   <header>
-    <h1>Go</h1>
+    <h1>Go tools</h1>
   </header>
-  
-    <article itemscope itemtype="http://schema.org/CreativeWork">
-  <header>
-    <h2 itemprop="name">
-      <a href="/note/go-libs/">Go libraries</a>
-    </h2>
-    
-  </header>
-  
-  <div itemprop="description">
-    <p>Collection of recommended Go libraries.</p>
+  <p>Collection of recommended Go tools.</p>
 
 <p></p>
-  </div>
-  
-    <p><a itemprop="url" href="/note/go-libs/">Read More&nbsp;&raquo;</a></p>
-  
-  <meta itemprop="inLanguage" content="en-us">
-  <meta itemprop="datePublished" content="2017-05-13T00:00:00&#43;00:00">
-  <meta itemprop="dateModified" content="2017-05-13T00:00:00&#43;00:00">
-  
-</article>
 
-  
-    <article itemscope itemtype="http://schema.org/CreativeWork">
-  <header>
-    <h2 itemprop="name">
-      <a href="/note/go-tools/">Go tools</a>
-    </h2>
-    
-  </header>
-  
-  <div itemprop="description">
-    <p>Collection of recommended Go tools.</p>
+<h2 id="vendoring">Vendoring</h2>
 
-<p></p>
-  </div>
-  
-    <p><a itemprop="url" href="/note/go-tools/">Read More&nbsp;&raquo;</a></p>
-  
-  <meta itemprop="inLanguage" content="en-us">
-  <meta itemprop="datePublished" content="2017-05-13T00:00:00&#43;00:00">
-  <meta itemprop="dateModified" content="2017-05-13T00:00:00&#43;00:00">
-  
-</article>
+<ul>
+<li>github.com/kardianos/govendor
+(<a href="https://github.com/kardianos/govendor">git</a>)</li>
+</ul>
 
-  
-    <article itemscope itemtype="http://schema.org/CreativeWork">
-  <header>
-    <h2 itemprop="name">
-      <a href="/quote/rob-pike/">Rob Pike</a>
-    </h2>
-    
-  </header>
-  
-  <div itemprop="description">
-    <blockquote  >
-  
-<p>
-What you're given is a set of powerful but easy to understand,
-easy to use building blocks from which you can assemble—compose—a solution to
-your problem. It might not end up quite as fast or as sophisticated or as
-ideologically motivated as the solution you'd write in some of those other
-languages, but it'll almost certainly be easier to write, easier to read, easier
-to understand, easier to maintain, and maybe safer.
-</p>
+<pre><code>#!/bin/sh -ex
 
-  
-    <cite>Rob Pike on the Go Programming language, 2012</cite>
-  
-</blockquote>
-
-
-<p></p>
-  </div>
-  
-  <meta itemprop="inLanguage" content="en-us">
-  <meta itemprop="datePublished" content="2017-05-10T00:00:00&#43;00:00">
-  <meta itemprop="dateModified" content="2017-05-10T00:00:00&#43;00:00">
-  
-</article>
-
-  
+go get -u -v github.com/kardianos/govendor
+rm -rf vendor
+go get -u -v -t ./...
+govendor init
+govendor add +external
+</code></pre>
 </main>
     <footer>
-  <nav>
-  <p>
-    
-    <span>Page 1 of 1</span>
-    
-  </p>
-</nav>
-
   
 
 </footer>

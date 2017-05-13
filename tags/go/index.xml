@@ -25,6 +25,17 @@
     </item>
     
     <item>
+      <title>Go tools</title>
+      <link>http://frankbraun.org/note/go-tools/</link>
+      <pubDate>Sat, 13 May 2017 00:00:00 +0000</pubDate>
+      <author>frank@cryptogroup.net (Frank Braun)</author>
+      <guid>http://frankbraun.org/note/go-tools/</guid>
+      <description>&lt;p&gt;Collection of recommended Go tools.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Rob Pike</title>
       <link>http://frankbraun.org/quote/rob-pike/</link>
       <pubDate>Wed, 10 May 2017 00:00:00 +0000</pubDate>
