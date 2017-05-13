@@ -151,9 +151,15 @@ article [itemprop="description"] {
 <h2 id="command-line">Command line</h2>
 
 <ul>
-<li>github.com/spf13/cobra
+<li><p>github.com/urfave/cli
+(<a href="https://github.com/urfave/cli">git</a>,
+<a href="https://godoc.org/github.com/urfave/cli">doc</a>) - option parsing</p></li>
+
+<li><p><del>github.com/spf13/cobra
 (<a href="https://github.com/spf13/cobra">git</a>,
-<a href="https://godoc.org/github.com/spf13/cobra">doc</a>) - option parsing</li>
+<a href="https://godoc.org/github.com/spf13/cobra">doc</a>) - option parsing</del>:
+not reentrant which makes it hard to test and unusable for interactive
+applications (where the option parser is run in a loop)</p></li>
 </ul>
 
 <h2 id="cryptography">Cryptography</h2>
