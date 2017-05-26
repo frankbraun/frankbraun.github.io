@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-    <meta name="generator" content="Hugo 0.21-DEV" />
+    <meta name="generator" content="Hugo 0.22-DEV" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Go tools | Frank Braun</title>
-    <meta name="description" content="Collection of recommended Go tools.
-
-">
+    <meta name="description" content="">
     <meta name="keywords" content="Go">
     
     
@@ -19,9 +17,7 @@
 
 
     <meta property="og:title" content="Go tools" />
-<meta property="og:description" content="Collection of recommended Go tools.
-
-" />
+<meta property="og:description" content="" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://frankbraun.org/note/go-tools/" />
 
@@ -144,35 +140,36 @@ article [itemprop="description"] {
   <header>
     <h1>Go tools</h1>
   </header>
-  <p>Collection of recommended Go tools.</p>
+  <div class="document">
 
-<p></p>
 
-<h2 id="testing">Testing</h2>
-
+<p>Collection of recommended Go tools.</p>
+<div class="section" id="testing">
+<h2>Testing</h2>
 <p>github.com/smartystreets/goconvey
-(<a href="https://github.com/smartystreets/goconvey">git</a>)</p>
-
+(<a class="reference external" href="https://github.com/smartystreets/goconvey">git</a>)</p>
 <p>Go testing with coverage analysis in the browser.</p>
-
-<pre><code>go get -v github.com/smartystreets/goconvey
+<pre class="literal-block">
+go get -v github.com/smartystreets/goconvey
 cd package
 goconvey
-</code></pre>
-
-<h2 id="vendoring">Vendoring</h2>
-
+</pre>
+</div>
+<div class="section" id="vendoring">
+<h2>Vendoring</h2>
 <p>github.com/kardianos/govendor
-(<a href="https://github.com/kardianos/govendor">git</a>)</p>
-
-<pre><code>#!/bin/sh -ex
+(<a class="reference external" href="https://github.com/kardianos/govendor">git</a>)</p>
+<pre class="literal-block">
+#!/bin/sh -ex
 
 go get -u -v github.com/kardianos/govendor
 rm -rf vendor
 go get -u -v -t ./...
 govendor init
 govendor add +external
-</code></pre>
+</pre>
+</div>
+</div>
 </main>
     <footer>
   
