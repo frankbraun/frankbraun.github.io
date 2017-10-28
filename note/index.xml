@@ -8,10 +8,22 @@
     <language>en-us</language>
     <managingEditor>frank@cryptogroup.net (Frank Braun)</managingEditor>
     <webMaster>frank@cryptogroup.net (Frank Braun)</webMaster>
-    <lastBuildDate>Fri, 26 May 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 27 Oct 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://frankbraun.org/note/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Solidity</title>
+      <link>http://frankbraun.org/note/solidity/</link>
+      <pubDate>Fri, 27 Oct 2017 00:00:00 +0000</pubDate>
+      <author>frank@cryptogroup.net (Frank Braun)</author>
+      <guid>http://frankbraun.org/note/solidity/</guid>
+      <description>Notes on the Solidity smart contracting language used by Ethereum.
+Types  Numbers in Solidity are 256-bits large (uint and int). The address type is a 160-bit value.  Accounts  Types of accounts:
+ External accounts: controlled by public-private key paris (i.e., humans). Contract accounts: controlled by code stored together with account.  Addresses of accounts:
+ Address of an external account is determined from the public key. Address of a contract is determined at the time the contract is created (creator address plus number of transactions sent).</description>
+    </item>
     
     <item>
       <title>Long-term software</title>

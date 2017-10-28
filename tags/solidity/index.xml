@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Solidity on Frank Braun</title>
+    <link>http://frankbraun.org/tags/solidity/</link>
+    <description>Recent content in Solidity on Frank Braun</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>frank@cryptogroup.net (Frank Braun)</managingEditor>
+    <webMaster>frank@cryptogroup.net (Frank Braun)</webMaster>
+    <lastBuildDate>Fri, 27 Oct 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://frankbraun.org/tags/solidity/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Solidity</title>
+      <link>http://frankbraun.org/note/solidity/</link>
+      <pubDate>Fri, 27 Oct 2017 00:00:00 +0000</pubDate>
+      <author>frank@cryptogroup.net (Frank Braun)</author>
+      <guid>http://frankbraun.org/note/solidity/</guid>
+      <description>Notes on the Solidity smart contracting language used by Ethereum.
+Types  Numbers in Solidity are 256-bits large (uint and int). The address type is a 160-bit value.  Accounts  Types of accounts:
+ External accounts: controlled by public-private key paris (i.e., humans). Contract accounts: controlled by code stored together with account.  Addresses of accounts:
+ Address of an external account is determined from the public key. Address of a contract is determined at the time the contract is created (creator address plus number of transactions sent).</description>
+    </item>
+    
+  </channel>
+</rss>
