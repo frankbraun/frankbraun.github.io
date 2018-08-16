@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://frankbraun.org/</loc>
+    <lastmod>2018-08-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://frankbraun.org/quote/alan-kay/</loc>
     <lastmod>2017-10-27T00:00:00+00:00</lastmod>
   </url>
@@ -70,11 +75,6 @@
   <url>
     <loc>http://frankbraun.org/quote/warren-buffet/</loc>
     <lastmod>2017-05-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://frankbraun.org/</loc>
-    <lastmod>2017-05-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
