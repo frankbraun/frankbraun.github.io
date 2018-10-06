@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://frankbraun.org/essay/fighting-targeted-backdoors/</loc>
+    <lastmod>2018-10-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://frankbraun.org/</loc>
     <lastmod>2018-08-16T00:00:00+00:00</lastmod>
   </url>
@@ -79,6 +84,12 @@
   
   <url>
     <loc>http://frankbraun.org/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://frankbraun.org/essay/</loc>
+    <lastmod>2018-10-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
