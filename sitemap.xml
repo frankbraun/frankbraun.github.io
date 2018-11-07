@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://frankbraun.org/essay/rules-for-life/</loc>
+    <lastmod>2018-11-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://frankbraun.org/essay/fighting-targeted-backdoors/</loc>
     <lastmod>2018-10-06T00:00:00+00:00</lastmod>
   </url>
@@ -29,11 +34,6 @@
   
   <url>
     <loc>http://frankbraun.org/note/tech/</loc>
-    <lastmod>2017-05-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://frankbraun.org/note/rst/</loc>
     <lastmod>2017-05-26T00:00:00+00:00</lastmod>
   </url>
   
@@ -89,7 +89,7 @@
   
   <url>
     <loc>http://frankbraun.org/essay/</loc>
-    <lastmod>2018-10-06T00:00:00+00:00</lastmod>
+    <lastmod>2018-11-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -9,8 +9,8 @@ The Cryptoanarchy Technology Pyramid
 
 <div class="figure">
 
-![The Cryptoanarchy Technology Pyramid]
-The Cryptoanarchy Technology Pyramid
+![The Cryptoanarchy Technology Pyramid] The Cryptoanarchy Technology
+Pyramid
 
 </div>
 
