@@ -7,7 +7,11 @@ draft: true
 The Cryptoanarchy Technology Pyramid
 ====================================
 
+<div class="figure">
 
-![The Cryptoanarchy Technology Pyramid](pyramid.png)
+![The Cryptoanarchy Technology Pyramid]
+The Cryptoanarchy Technology Pyramid
 
+</div>
 
+  [The Cryptoanarchy Technology Pyramid]: pyramid.png
