@@ -8,10 +8,19 @@
     <language>en-us</language>
     <managingEditor>frank@cryptogroup.net (Frank Braun)</managingEditor>
     <webMaster>frank@cryptogroup.net (Frank Braun)</webMaster>
-    <lastBuildDate>Fri, 27 Oct 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 08 Nov 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://frankbraun.org/note/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Flutter notes</title>
+      <link>http://frankbraun.org/note/flutter/</link>
+      <pubDate>Thu, 08 Nov 2018 00:00:00 +0000</pubDate>
+      <author>frank@cryptogroup.net (Frank Braun)</author>
+      <guid>http://frankbraun.org/note/flutter/</guid>
+      <description>&lt;p&gt;2018-11-08 [read as &lt;a href=&#34;http://frankbraun.org/note/flutter.txt&#34;&gt;txt&lt;/a&gt; or &lt;a href=&#34;http://frankbraun.org/note/flutter.pdf&#34;&gt;PDF&lt;/a&gt;]&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Solidity</title>
