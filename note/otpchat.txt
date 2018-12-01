@@ -1,0 +1,12 @@
+---
+author: Frank Braun
+date: 2018-11-20
+draft: true
+---
+
+OTPchat
+=======
+
+OTPchat is an integrated [one-time pad] (OTP) chat solution.
+
+  [one-time pad]: https://en.wikipedia.org/wiki/One-time_pad

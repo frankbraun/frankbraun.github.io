@@ -13,6 +13,11 @@
   </url>
   
   <url>
+    <loc>http://frankbraun.org/talk/the-cryptoanarchy-technology-pyramid/</loc>
+    <lastmod>2018-10-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://frankbraun.org/essay/fighting-targeted-backdoors/</loc>
     <lastmod>2018-10-06T00:00:00+00:00</lastmod>
   </url>
@@ -131,6 +136,12 @@
   <url>
     <loc>http://frankbraun.org/tags/</loc>
     <lastmod>2017-10-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://frankbraun.org/talk/</loc>
+    <lastmod>2018-10-26T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
