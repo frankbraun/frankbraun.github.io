@@ -1,10 +1,10 @@
 ---
 author: Frank Braun
-date: 2019-06-05
+date: 2019-06-06
 ---
 
-ASN.1 notes
-===========
+ASN.1
+=====
 
 _Abstract Syntax Notation One_ (ASN.1) allows defining data structures
 that can be serialized and deserialized in a cross-platform way.
