@@ -172,11 +172,41 @@ digit first.</li>
 
 <p>Class encodings:</p>
 
-<pre><code>universal:        bit 8 is 0, bit 7 is 0
-application:      bit 8 is 0, bit 7 is 1
-context-specific: bit 8 is 1, bit 7 is 0
-private:          bit 8 is 1, bit 7 is 1
-</code></pre>
+<table>
+<thead>
+<tr>
+<th>Class</th>
+<th>Bit 8</th>
+<th>Bit 7</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>universal</td>
+<td>0</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>application</td>
+<td>0</td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>context-specific</td>
+<td>1</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>private</td>
+<td>1</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
 
 <h2 id="references">References</h2>
 

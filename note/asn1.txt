@@ -38,10 +38,12 @@ DER is a _tag-length-value_ (TLV) encoding:
 
 Class encodings:
 
-    universal:        bit 8 is 0, bit 7 is 0
-    application:      bit 8 is 0, bit 7 is 1
-    context-specific: bit 8 is 1, bit 7 is 0
-    private:          bit 8 is 1, bit 7 is 1
+| Class            | Bit 8 | Bit 7 |
+|------------------|-------|-------|
+| universal        | 0     | 0     |
+| application      | 0     | 1     |
+| context-specific | 1     | 0     |
+| private          | 1     | 1     |
 
 References
 ----------
