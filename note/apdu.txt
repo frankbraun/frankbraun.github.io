@@ -27,9 +27,9 @@ data.
 | CLA          | 1            | Instruction class - indicates type of command |
 | INS          | 1            | Instruction code - indicates specific command |
 | P1-P2        | 2            | Instruction parameters for the command        |
-| Lc           | 0, 1 or 3    | Encode number (`Nc`) of bytes of command data |
+| `Lc`         | 0, 1 or 3    | Encode number (`Nc`) of bytes of command data |
 | Command data | `Nc`         | `Nc` bytes of data                            |
-| Le           | 0, 1, 2 or 3 | Maximum number (`Ne`) expected response bytes |
+| `Le`         | 0, 1, 2 or 3 | Maximum number (`Ne`) expected response bytes |
 
 See [APUDs at Wikipedia] for `Lc` and `Le` encodings.
 
