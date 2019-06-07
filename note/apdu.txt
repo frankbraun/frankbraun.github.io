@@ -1,6 +1,6 @@
 ---
 author: Frank Braun
-date: 2019-06-06
+date: 2019-06-07
 ---
 
 application protocol data unit (APDU)
@@ -42,14 +42,17 @@ to 65536 bytes of data, and 2 mandatory status bytes (SW1, SW2).
 | Field name                 | Length              | Description               |
 |----------------------------|---------------------|---------------------------|
 | Response data              | `Nr` (at most `Ne`) | Response data             |
-| Response trailer (SW1-SW2) | 2                   | Command processing status |
+| Response trailer (SW1 SW2) | 2                   | Command processing status |
 
 Some status bytes
 -----------------
 
-| SW1-SW2 | Message                        |
-|---------|--------------------------------|
-| 9000    | Command executed without error |
+| SW1 SW2 | Message                                         |
+|---------|-------------------------------------------------|
+| 63 CX   | Counter provided by `X` (valued from 0 to 15)   |
+| 69 82   | Access conditions not fulfilled                 |
+| 69 85   | No currently selected EF, no command to monitor |
+| 90 00   | Command executed without error                  |
 
 See [SW1 SW2 status bytes] for more status bytes.
 
