@@ -33,6 +33,17 @@ data.
 
 See [APUDs at Wikipedia] for `Lc` and `Le` encodings.
 
+Command APDU cases:
+
+-   Case 1: no command data, no response data: `|Header|`
+-   Case 2: no command data, response data: `|Header|Le|`
+-   Case 3: command data, response data: `|Header|Lc|Data|`
+-   Case 4: command data, response data: `|Header|Lc|Data|Le|`
+
+An _extended APDU_ is an APDU (command) with data and/or response of
+more than 256 bytes and up to 65536 bytes. Otherwise it is a _short
+APDU_.
+
 Response APDU
 -------------
 

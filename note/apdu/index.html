@@ -199,6 +199,19 @@ data.</p>
 
 <p>See <a href="https://en.wikipedia.org/wiki/Smart_card_application_protocol_data_unit">APUDs at Wikipedia</a> for <code>Lc</code> and <code>Le</code> encodings.</p>
 
+<p>Command APDU cases:</p>
+
+<ul>
+<li>Case 1: no command data, no response data: <code>|Header|</code></li>
+<li>Case 2: no command data, response data: <code>|Header|Le|</code></li>
+<li>Case 3: command data, response data: <code>|Header|Lc|Data|</code></li>
+<li>Case 4: command data, response data: <code>|Header|Lc|Data|Le|</code></li>
+</ul>
+
+<p>An <em>extended APDU</em> is an APDU (command) with data and/or response of
+more than 256 bytes and up to 65536 bytes. Otherwise it is a <em>short
+APDU</em>.</p>
+
 <h2 id="response-apdu">Response APDU</h2>
 
 <p>A response APDU is sent by the card to the reader &mdash; it contains from 0
