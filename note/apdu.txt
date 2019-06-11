@@ -61,6 +61,7 @@ Some status bytes
 | SW1 SW2 | Message                                         |
 |---------|-------------------------------------------------|
 | 63 CX   | Counter provided by `X` (valued from 0 to 15)   |
+| 67 00   | Incorrect length or address range error         |
 | 69 82   | Access conditions not fulfilled                 |
 | 69 85   | No currently selected EF, no command to monitor |
 | 90 00   | Command executed without error                  |
