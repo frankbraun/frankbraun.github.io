@@ -8,10 +8,24 @@
     <language>en-us</language>
     <managingEditor>frank@cryptogroup.net (Frank Braun)</managingEditor>
     <webMaster>frank@cryptogroup.net (Frank Braun)</webMaster>
-    <lastBuildDate>Fri, 27 Oct 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 09 Jul 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://frankbraun.org/quote/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Robert A. Heinlein</title>
+      <link>http://frankbraun.org/quote/robert-heinlein/</link>
+      <pubDate>Tue, 09 Jul 2019 00:00:00 +0000</pubDate>
+      <author>frank@cryptogroup.net (Frank Braun)</author>
+      <guid>http://frankbraun.org/quote/robert-heinlein/</guid>
+      <description>&lt;blockquote cite=&#34;https://www.goodreads.com/quotes/503895-but-when-they-began-handing-out-doctorates-for-comparative-folk&#34;&gt;
+  &lt;p&gt;  But when they began handing out doctorates for comparative folk dancing and advanced fly-fishing, I became too stink in&amp;#39; proud to use the title. I won&amp;#39;t touch watered whiskey and I take no pride in watered-down degrees. &lt;/p&gt;
+  
+    &lt;cite&gt;&lt;a  target=&#34;_blank&#34; rel=&#34;external noopener&#34; href=&#34;https://www.goodreads.com/quotes/503895-but-when-they-began-handing-out-doctorates-for-comparative-folk&#34;&gt;Robert A. Heinlein, Stranger in a Strange Land&lt;/a&gt;&lt;/cite&gt;
+  
+&lt;/blockquote&gt;</description>
+    </item>
     
     <item>
       <title>Alan Kay</title>
