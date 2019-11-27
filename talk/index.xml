@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Talks on Frank Braun</title>
@@ -38,6 +38,15 @@
       <author>frank@cryptogroup.net (Frank Braun)</author>
       <guid>http://frankbraun.org/talk/dehumanizing-technology/</guid>
       <description>&lt;p&gt;HCPP17, Prague, 2017-10-07&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Bitcoin in the Counter-Economy</title>
+      <link>http://frankbraun.org/talk/bitcoin-in-the-counter-economy/</link>
+      <pubDate>Sun, 16 Sep 2012 00:00:00 +0000</pubDate>
+      <author>frank@cryptogroup.net (Frank Braun)</author>
+      <guid>http://frankbraun.org/talk/bitcoin-in-the-counter-economy/</guid>
+      <description>&lt;p&gt;Bitcoin Conference, London, 2012-09-16&lt;/p&gt;</description>
     </item>
     
   </channel>

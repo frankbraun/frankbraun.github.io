@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Frank Braun</title>
@@ -23,20 +23,20 @@
     </item>
     
     <item>
-      <title>Go</title>
-      <link>http://frankbraun.org/tags/go/</link>
-      <pubDate>Sat, 13 May 2017 00:00:00 +0000</pubDate>
-      <author>frank@cryptogroup.net (Frank Braun)</author>
-      <guid>http://frankbraun.org/tags/go/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Solidity</title>
       <link>http://frankbraun.org/tags/solidity/</link>
       <pubDate>Fri, 27 Oct 2017 00:00:00 +0000</pubDate>
       <author>frank@cryptogroup.net (Frank Braun)</author>
       <guid>http://frankbraun.org/tags/solidity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Go</title>
+      <link>http://frankbraun.org/tags/go/</link>
+      <pubDate>Sat, 13 May 2017 00:00:00 +0000</pubDate>
+      <author>frank@cryptogroup.net (Frank Braun)</author>
+      <guid>http://frankbraun.org/tags/go/</guid>
       <description></description>
     </item>
     

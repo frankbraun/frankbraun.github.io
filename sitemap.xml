@@ -1,6 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://frankbraun.org/quote/</loc>
+    <lastmod>2019-07-09T00:00:00+00:00</lastmod>
+  </url>
   
   <url>
     <loc>http://frankbraun.org/quote/robert-heinlein/</loc>
@@ -9,6 +14,11 @@
   
   <url>
     <loc>http://frankbraun.org/note/apdu/</loc>
+    <lastmod>2019-06-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://frankbraun.org/note/</loc>
     <lastmod>2019-06-11T00:00:00+00:00</lastmod>
   </url>
   
@@ -23,8 +33,18 @@
   </url>
   
   <url>
+    <loc>http://frankbraun.org/essay/</loc>
+    <lastmod>2018-11-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://frankbraun.org/essay/rules-for-life/</loc>
     <lastmod>2018-11-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://frankbraun.org/talk/</loc>
+    <lastmod>2018-10-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -53,7 +73,22 @@
   </url>
   
   <url>
+    <loc>http://frankbraun.org/tags/ethereum/</loc>
+    <lastmod>2017-10-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://frankbraun.org/tags/solidity/</loc>
+    <lastmod>2017-10-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://frankbraun.org/note/solidity/</loc>
+    <lastmod>2017-10-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://frankbraun.org/tags/</loc>
     <lastmod>2017-10-27T00:00:00+00:00</lastmod>
   </url>
   
@@ -74,6 +109,11 @@
   
   <url>
     <loc>http://frankbraun.org/note/make/</loc>
+    <lastmod>2017-05-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://frankbraun.org/tags/go/</loc>
     <lastmod>2017-05-13T00:00:00+00:00</lastmod>
   </url>
   
@@ -118,56 +158,12 @@
   </url>
   
   <url>
+    <loc>http://frankbraun.org/talk/bitcoin-in-the-counter-economy/</loc>
+    <lastmod>2012-09-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://frankbraun.org/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://frankbraun.org/essay/</loc>
-    <lastmod>2018-11-07T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://frankbraun.org/tags/ethereum/</loc>
-    <lastmod>2017-10-27T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://frankbraun.org/tags/go/</loc>
-    <lastmod>2017-05-13T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://frankbraun.org/note/</loc>
-    <lastmod>2019-06-11T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://frankbraun.org/quote/</loc>
-    <lastmod>2019-07-09T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://frankbraun.org/tags/solidity/</loc>
-    <lastmod>2017-10-27T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://frankbraun.org/tags/</loc>
-    <lastmod>2017-10-27T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://frankbraun.org/talk/</loc>
-    <lastmod>2018-10-26T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
 </urlset>
