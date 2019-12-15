@@ -8,10 +8,19 @@
     <language>en-us</language>
     <managingEditor>frank@cryptogroup.net (Frank Braun)</managingEditor>
     <webMaster>frank@cryptogroup.net (Frank Braun)</webMaster>
-    <lastBuildDate>Fri, 26 Oct 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 14 Dec 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://frankbraun.org/talk/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Container TAZ</title>
+      <link>http://frankbraun.org/talk/container-taz/</link>
+      <pubDate>Sat, 14 Dec 2019 00:00:00 +0000</pubDate>
+      <author>frank@cryptogroup.net (Frank Braun)</author>
+      <guid>http://frankbraun.org/talk/container-taz/</guid>
+      <description>&lt;p&gt;Paralelná Polis, Bratislava, 2019-12-14&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>The Cryptoanarchy Technology Pyramid</title>
