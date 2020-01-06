@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://frankbraun.org/essay/cryptocurrencies-as-cyberstatism/</loc>
+    <lastmod>2020-01-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://frankbraun.org/essay/</loc>
+    <lastmod>2020-01-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://frankbraun.org/talk/container-taz/</loc>
     <lastmod>2019-12-14T00:00:00+00:00</lastmod>
   </url>
@@ -45,11 +55,6 @@
   <url>
     <loc>http://frankbraun.org/note/flutter/</loc>
     <lastmod>2018-11-08T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://frankbraun.org/essay/</loc>
-    <lastmod>2018-11-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
