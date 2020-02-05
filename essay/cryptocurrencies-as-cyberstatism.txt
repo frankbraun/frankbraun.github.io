@@ -170,6 +170,10 @@ Given the two, focus on the real competition and better exchangeability
 between different cryptocurrencies, it might be possible to make a real
 dent into the system of government issued fiat money.
 
+Do you like my work and want to give back? Donate bitcoin:
+
+[3FguRzVXe24cicayb2tmVnHVu4Sp1rULNC](bitcoin://3FguRzVXe24cicayb2tmVnHVu4Sp1rULNC)
+
   [Twitter]: https://twitter.com/thefrankbraun/status/1213190589149265922
   [Cyberstatism]: #cyberstatism
   [Decred]: https://decred.org/

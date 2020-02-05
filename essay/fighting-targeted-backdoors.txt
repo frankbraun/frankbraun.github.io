@@ -1199,6 +1199,10 @@ Acknowledgments
 Codechain and this paper have been heavily influenced by discussions
 with [Jonathan Logan] of [Cryptohippie], Inc.
 
+Do you like my work and want to give back? Donate bitcoin:
+
+[3FguRzVXe24cicayb2tmVnHVu4Sp1rULNC](bitcoin://3FguRzVXe24cicayb2tmVnHVu4Sp1rULNC)
+
   [Turing Award Lecture]: https://doi.org/10.1145/358198.358210
   [The Fog of Cryptowar]: http://shadowlife.cc/files/hcpp17-smuggler.html
   [Assistance and Access Bill 2018, Explanatory Document]: http://frankbraun.org/ref/assistance-and-access-bill-2018-explanatory-document.pdf
