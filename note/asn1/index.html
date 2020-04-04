@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-    <meta name="generator" content="Hugo 0.60.0-DEV" />
+    <meta name="generator" content="Hugo 0.69.0-DEV" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ASN.1 | Frank Braun</title>
@@ -134,21 +134,15 @@ a[itemprop="url"]:hover {
     <h1>ASN.1</h1>
   </header>
   <p>2019-06-06 [read as <a href="/note/asn1.txt">txt</a> or <a href="/note/asn1.pdf">PDF</a>]</p>
-
 <p><em>Abstract Syntax Notation One</em> (ASN.1) allows defining data structures
 that can be serialized and deserialized in a cross-platform way.</p>
-
 <p><em>Basic Encoding Rules</em> (BER) specify a self-describing and
 self-delimiting format for encoding ASN.1 data structures.</p>
-
 <p><em>Distinguished Encoding Rules</em> (DER) is a restricted variant of BER thas
 is unequivocal.</p>
-
 <p>DER is a <em>tag-length-value</em> (TLV) encoding:</p>
-
 <ul>
 <li>tag (two forms):
-
 <ul>
 <li><em>low-tag-number form</em>: One octet. Bits 8 and 7 specify the
 class, bit 6 has value 0 indicating that the encoding is
@@ -159,9 +153,9 @@ Second and following octets give the tag number, base 128, most
 significant digit first, with as few digits as possible, and
 with the bit 8 of each octet except the last set to 1. If bit 6
 has value 1, it indicates that the encoding is constructed.</li>
-</ul></li>
+</ul>
+</li>
 <li>length (two forms):
-
 <ul>
 <li><em>Short form</em>: One octet. Bit 8 has value 0 and bits 7-1 give the
 length.</li>
@@ -169,12 +163,11 @@ length.</li>
 and bits 7-1 give the number of additional length octets. Second
 and following octets give the length, base 256, most significant
 digit first.</li>
-</ul></li>
+</ul>
+</li>
 <li>value: actual value as byte array of defined length.</li>
 </ul>
-
 <p>Class encodings:</p>
-
 <table>
 <thead>
 <tr>
@@ -183,26 +176,22 @@ digit first.</li>
 <th>Bit 7</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td>universal</td>
 <td>0</td>
 <td>0</td>
 </tr>
-
 <tr>
 <td>application</td>
 <td>0</td>
 <td>1</td>
 </tr>
-
 <tr>
 <td>context-specific</td>
 <td>1</td>
 <td>0</td>
 </tr>
-
 <tr>
 <td>private</td>
 <td>1</td>
@@ -210,9 +199,7 @@ digit first.</li>
 </tr>
 </tbody>
 </table>
-
 <h2 id="references">References</h2>
-
 <ul>
 <li><a href="https://golang.org/pkg/encoding/asn1/">Go asn1 package</a></li>
 <li><a href="http://luca.ntop.org/Teaching/Appunti/asn1.html">A Layman&rsquo;s Guide to a Subset of ASN.1, BER, and DER</a></li>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-    <meta name="generator" content="Hugo 0.60.0-DEV" />
+    <meta name="generator" content="Hugo 0.69.0-DEV" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Solidity | Frank Braun</title>
@@ -134,48 +134,47 @@ a[itemprop="url"]:hover {
     <h1>Solidity</h1>
   </header>
   <p>Notes on the Solidity smart contracting language used by Ethereum.</p>
-
 <h2 id="types">Types</h2>
-
 <ul>
 <li>Numbers in Solidity are 256-bits large (<code>uint</code> and <code>int</code>).</li>
 <li>The <code>address</code> type is a 160-bit value.</li>
 </ul>
-
 <h2 id="accounts">Accounts</h2>
-
 <ul>
-<li><p>Types of accounts:</p>
-
+<li>
+<p>Types of accounts:</p>
 <ul>
 <li><strong>External accounts</strong>: controlled by public-private key paris
 (i.e., humans).</li>
 <li><strong>Contract accounts</strong>: controlled by code stored together with
 account.</li>
-</ul></li>
-
-<li><p>Addresses of accounts:</p>
-
+</ul>
+</li>
+<li>
+<p>Addresses of accounts:</p>
 <ul>
 <li>Address of an external account is determined from the public
 key.</li>
 <li>Address of a contract is determined at the time
 the contract is created (creator address plus number of
 transactions sent).</li>
-</ul></li>
-
-<li><p>A <strong>transaction</strong> is a message that is sent from one account to
-another account. It can include binary data (its payload) and Ether.</p></li>
-
-<li><p>If the target account contains code, that code is executed and the
-payload is provided as input data.</p></li>
-
-<li><p>If the target account is the zero-account (the account with the
-address <code>0</code>), the transaction creates a new contract.</p></li>
-
-<li><p>Every account has a persistent key-value store mapping 256-bit words
+</ul>
+</li>
+<li>
+<p>A <strong>transaction</strong> is a message that is sent from one account to
+another account. It can include binary data (its payload) and Ether.</p>
+</li>
+<li>
+<p>If the target account contains code, that code is executed and the
+payload is provided as input data.</p>
+</li>
+<li>
+<p>If the target account is the zero-account (the account with the
+address <code>0</code>), the transaction creates a new contract.</p>
+</li>
+<li>
+<p>Every account has a persistent key-value store mapping 256-bit words
 to 256-bit words called <strong>storage</strong>:</p>
-
 <ul>
 <li>Storage is a key-value store that maps 256-bit words to 256-bit
 words.</li>
@@ -184,12 +183,13 @@ and it is comparatively costly to read and even more so, to
 modify storage.</li>
 <li>A contract can neither read nor write to any storage apart from
 its own.</li>
-</ul></li>
-
-<li><p>Every account has a <strong>balance</strong> in Ether.</p></li>
-
-<li><p>Second memory area is <strong>memory</strong> (fresh for each message call):</p>
-
+</ul>
+</li>
+<li>
+<p>Every account has a <strong>balance</strong> in Ether.</p>
+</li>
+<li>
+<p>Second memory area is <strong>memory</strong> (fresh for each message call):</p>
 <ul>
 <li>Memory is linear and can be addressed at byte level.</li>
 <li>Reads are limited to a width of 256 bits</li>
@@ -199,14 +199,14 @@ previously untouched memory word.</li>
 <li>At the time of expansion, the cost in gas must be paid.</li>
 <li>Memory is more costly the larger it grows (it scales
 quadratically).</li>
-</ul></li>
-
-<li><p>The Ethereum Virtual Machine (EVM) is stack machine, it has a
-maximum size of 1024 elements (256-bit words).</p></li>
 </ul>
-
+</li>
+<li>
+<p>The Ethereum Virtual Machine (EVM) is stack machine, it has a
+maximum size of 1024 elements (256-bit words).</p>
+</li>
+</ul>
 <h2 id="references">References</h2>
-
 <ul>
 <li><a href="https://solidity.readthedocs.io/en/develop/index.html">https://solidity.readthedocs.io/en/develop/index.html</a></li>
 <li><a href="https://blockgeeks.com/guides/how-to-learn-solidity/">https://blockgeeks.com/guides/how-to-learn-solidity/</a></li>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-    <meta name="generator" content="Hugo 0.60.0-DEV" />
+    <meta name="generator" content="Hugo 0.69.0-DEV" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>In Code We Trust | Frank Braun</title>
@@ -134,51 +134,43 @@ a[itemprop="url"]:hover {
     <h1>In Code We Trust</h1>
   </header>
   <p>HCPP18, Prague, 2018-10-06</p>
-
 <ul>
 <li><a href="/in-code-we-trust-2.pdf">Slides</a></li>
 <li><a href="/essay/fighting-targeted-backdoors/">Essay</a></li>
 <li><a href="https://www.youtube.com/watch?v=iwY2Bq8vaQc">Video</a></li>
 </ul>
-
 <h2 id="abstract">Abstract</h2>
-
-<p>In his HCPP17 talk &ldquo;<a href="http://shadowlife.cc/files/hcpp17-smuggler.html">The Fog of Cryptowar</a>&ldquo;
+<p>In his HCPP17 talk &ldquo;<a href="http://shadowlife.cc/files/hcpp17-smuggler.html">The Fog of Cryptowar</a>&rdquo;
 Smuggler warned about
 targeted updates being used to introduce backdoors into specific devices
 in order to surveil the user.</p>
-
 <p>Unfortunately, that&rsquo;s exactly the approach the Australian government, a
 member of the Five Eyes, is taking in their proposed Assistance and
 Access Bill 2018:</p>
-
 <p>&ldquo;[Technical Capability] Notices may still require a provider to enable
 access to a particular service, particular device or particular item of
 software, which would not systematically weaken these products across
 the market.&rdquo;</p>
-
 <p>This approach won&rsquo;t be unique to Australia, they are just spearheading
 the approach for the Five Eye nations, and others are likely to follow.</p>
-
 <p>The suggested technical counter-measures in &ldquo;The Fog of Cryptowar&rdquo;
 included secure software development and delivery.</p>
-
 <p>In this talk a tool is presented which tackles these two areas by:</p>
-
 <ol>
-<li><p>Establishing code trust via multi-party code reviews recorded in
+<li>
+<p>Establishing code trust via multi-party code reviews recorded in
 unmodifiable hash chains. This prevents that a single developer can
-include a generic backdoor into software.</p></li>
-
-<li><p>A single source of truth (SSOT) mechanism which makes sure every
+include a generic backdoor into software.</p>
+</li>
+<li>
+<p>A single source of truth (SSOT) mechanism which makes sure every
 user of the software gets the same version of the software. This
-prevents targeted backdoors and the suppression of security updates.</p></li>
+prevents targeted backdoors and the suppression of security updates.</p>
+</li>
 </ol>
-
 <p>Together this builds a secure software delivery and update mechanism
 which cannot be compromised by a single developer or for a specific
 user.</p>
-
 <p>In the next step it could be used to improve the most common signing
 mechanism used by open-source software distributions&mdash;a single GPG
 signature&mdash;which has neither of the two properties described above.</p>
