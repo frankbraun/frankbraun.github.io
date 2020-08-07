@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://frankbraun.org/note/concurrency-in-go-and-erlang/</loc>
+    <lastmod>2020-08-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://frankbraun.org/note/</loc>
+    <lastmod>2020-08-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://frankbraun.org/essay/cryptocurrencies-as-cyberstatism/</loc>
     <lastmod>2020-01-06T00:00:00+00:00</lastmod>
   </url>
@@ -39,11 +49,6 @@
   
   <url>
     <loc>http://frankbraun.org/note/apdu/</loc>
-    <lastmod>2019-06-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://frankbraun.org/note/</loc>
     <lastmod>2019-06-11T00:00:00+00:00</lastmod>
   </url>
   

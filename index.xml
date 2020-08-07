@@ -14,6 +14,15 @@
     
     
     <item>
+      <title>Concurrency in Go and Erlang</title>
+      <link>http://frankbraun.org/note/concurrency-in-go-and-erlang/</link>
+      <pubDate>Fri, 07 Aug 2020 00:00:00 +0000</pubDate>
+      <author>frank@cryptogroup.net (Frank Braun)</author>
+      <guid>http://frankbraun.org/note/concurrency-in-go-and-erlang/</guid>
+      <description>&lt;p&gt;2020-08-07 [read as &lt;a href=&#34;http://frankbraun.org/note/concurrency-in-go-and-erlang.txt&#34;&gt;txt&lt;/a&gt; or &lt;a href=&#34;http://frankbraun.org/note/concurrency-in-go-and-erlang.pdf&#34;&gt;PDF&lt;/a&gt;]&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Cryptocurrencies as Cyberstatism</title>
       <link>http://frankbraun.org/essay/cryptocurrencies-as-cyberstatism/</link>
       <pubDate>Mon, 06 Jan 2020 00:00:00 +0000</pubDate>

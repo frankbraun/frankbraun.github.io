@@ -8,10 +8,19 @@
     <language>en-us</language>
     <managingEditor>frank@cryptogroup.net (Frank Braun)</managingEditor>
     <webMaster>frank@cryptogroup.net (Frank Braun)</webMaster>
-    <lastBuildDate>Tue, 11 Jun 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 07 Aug 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://frankbraun.org/note/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Concurrency in Go and Erlang</title>
+      <link>http://frankbraun.org/note/concurrency-in-go-and-erlang/</link>
+      <pubDate>Fri, 07 Aug 2020 00:00:00 +0000</pubDate>
+      <author>frank@cryptogroup.net (Frank Braun)</author>
+      <guid>http://frankbraun.org/note/concurrency-in-go-and-erlang/</guid>
+      <description>&lt;p&gt;2020-08-07 [read as &lt;a href=&#34;http://frankbraun.org/note/concurrency-in-go-and-erlang.txt&#34;&gt;txt&lt;/a&gt; or &lt;a href=&#34;http://frankbraun.org/note/concurrency-in-go-and-erlang.pdf&#34;&gt;PDF&lt;/a&gt;]&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>application protocol data unit (APDU)</title>
