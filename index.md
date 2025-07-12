@@ -7,6 +7,10 @@ transact privately is essential.
 
 German native, moving to Switzerland.
 
+## What am I doing now?
+
+See [my "now" page](/now).
+
 ## Posts
 
 - [Why I changed my mind on t-addresses in Zcash](/t-addr) (2025-07-11)
