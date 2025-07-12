@@ -7,8 +7,7 @@ own site, [you should make one](https://nownownow.com/about), too.)
 
 ## Crypto again
 
-I'm deep in the rabbit hole right trying to wrap my head around the Zcash
-ecosystem.
+I'm deep in the rabbit hole trying to wrap my head around the Zcash ecosystem.
 
 ## Moving
 
