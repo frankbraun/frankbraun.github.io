@@ -2,8 +2,8 @@
 
 *by [Frank Braun](https://frankbraun.org), 2025-07-12*
 
-(This is [a now page](href="https://nownownow.com/about"), and if you have your
-own site, [you should make one]("https://nownownow.com/about"), too.)
+(This is [a now page](https://nownownow.com/about), and if you have your
+own site, [you should make one](https://nownownow.com/about), too.)
 
 ## Crypto again
 
