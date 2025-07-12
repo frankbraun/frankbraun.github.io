@@ -12,4 +12,5 @@ ecosystem.
 
 ## Moving
 
-I'm in the process of moving from Dubai to Switzerland. From megacity to nature.
+I'm in the process of moving from Dubai to Switzerland.
+From a megacity back to nature.
