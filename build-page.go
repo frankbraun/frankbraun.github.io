@@ -84,7 +84,12 @@ func buildPage() error {
 				if _, err := fp.WriteString(doctype); err != nil {
 					return err
 				}
-				if _, err := fp.WriteString("<title>" + title + "</title>\n"); err != nil {
+				s := "<title>" + title
+				if path != "index.md" {
+					s += " | Frank Braun"
+				}
+				s += "</title>\n"
+				if _, err := fp.WriteString(s); err != nil {
 					return err
 				}
 				if _, err := fp.WriteString(header); err != nil {
