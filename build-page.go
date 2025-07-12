@@ -1,20 +1,25 @@
 package main
 
 import (
+	"bufio"
 	"bytes"
 	"fmt"
+	"io/fs"
 	"os"
+	"path/filepath"
+	"strings"
 
 	"github.com/yuin/goldmark"
 )
 
-const header = `<!doctype html>
+const doctype = `<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Frank Braun</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="css/water.css">
+`
+
+const header = `<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="//css/water.css">
 </head>
 <body>
 <main>
@@ -25,32 +30,80 @@ const footer = `</main>
 </html>
 `
 
-func buildPage() error {
-	in, err := os.ReadFile("index.md")
+func readFirstLine(filename string) (string, error) {
+	fp, err := os.Open(filename)
 	if err != nil {
-		return err
-	}
-
-	var out bytes.Buffer
-	if err := goldmark.Convert(in, &out); err != nil {
-		return err
-	}
-
-	fp, err := os.Create("index.html")
-	if err != nil {
-		return err
+		return "", err
 	}
 	defer fp.Close()
+	scanner := bufio.NewScanner(fp)
+	if scanner.Scan() {
+		l := scanner.Text()
+		return strings.TrimPrefix(l, "# "), nil
+	}
+	if err := scanner.Err(); err != nil {
+		return "", err
+	}
+	return "", fmt.Errorf("file '%s' is empty\n")
+}
 
-	if _, err := fp.WriteString(header); err != nil {
+func buildPage() error {
+	// find all .md files in tree
+	err := filepath.WalkDir(".", func(path string, d fs.DirEntry, err error) error {
+		if err != nil {
+			return err
+		}
+		if !d.IsDir() {
+			// only consider .md files that are not README.md
+			if path != "README.md" && strings.HasSuffix(path, ".md") {
+				// read .md file in
+				in, err := os.ReadFile(path)
+				if err != nil {
+					return err
+				}
+
+				// convert it to HTML
+				var out bytes.Buffer
+				if err := goldmark.Convert(in, &out); err != nil {
+					return err
+				}
+
+				// create .html file
+				fp, err := os.Create(strings.TrimSuffix(path, ".md") + ".html")
+				if err != nil {
+					return err
+				}
+				defer fp.Close()
+
+				title, err := readFirstLine(path)
+				if err != nil {
+					return err
+				}
+
+				// write HTML to .html file
+				if _, err := fp.WriteString(doctype); err != nil {
+					return err
+				}
+				if _, err := fp.WriteString("<title>" + title + "</title>\n"); err != nil {
+					return err
+				}
+				if _, err := fp.WriteString(header); err != nil {
+					return err
+				}
+				if _, err := fp.Write(out.Bytes()); err != nil {
+					return err
+				}
+				if _, err := fp.WriteString(footer); err != nil {
+					return err
+				}
+			}
+		}
+		return nil
+	})
+	if err != nil {
 		return err
 	}
-	if _, err := fp.Write(out.Bytes()); err != nil {
-		return err
-	}
-	if _, err := fp.WriteString(footer); err != nil {
-		return err
-	}
+
 	return nil
 }
 

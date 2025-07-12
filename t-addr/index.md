@@ -1,3 +1,5 @@
+# Why I changed my mind on t-addresses in Zcash
+
 *by [Frank Braun](https://frankbraun.org), 2025-07-11*
 
 In Zcash there are two kind of addresses: transparent addresses (or t-addresses) and shielded addresses (or z-addresses).
