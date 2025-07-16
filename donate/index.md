@@ -5,6 +5,8 @@ If you like my work, please consider making a donation.
 If your favorite cryptocurrency is not listed **and** you want to make a
 donation, please [contact me](https://frankbraun.org#contact).
 
+Listing in alphabetical order.
+
 ## Bitcoin (BTC)
 
 `bc1qhyrvhzml4a9jt6v6cysmrj5ympuzu06j6w5f6x`
