@@ -12,6 +12,3 @@ donation, please [contact me](https://frankbraun.org#contact).
 ### Zcash (ZEC)
 
 `u1gj0fgsp3hxj0z8z6jjtqqygk0pxdh06dkga8kheeywpqxsgy965usv67wkj93gmw3hgzcdxse8r0x98v3x5c4laxmk2exlc54eeg9dp8ru2ppxy969gnah3c79tgjqxhsjuke9qcxdnjkqrpplswef4h9we4p24ktpvskngmgqh9qnyj`
-
-
-(*If you like my work, please consider [making a donation](https://frankbraun.org/donate).*)
