@@ -13,6 +13,11 @@ Listing in alphabetical order.
 
 ![QR code](https://frankbraun.org/img/bitcoin.png)
 
+## Lightning (LN)
+
+`ultracougar5@primal.net`
+
+![QR code](https://frankbraun.org/img/lightning.png)
 
 ## Monero (XMR)
 
