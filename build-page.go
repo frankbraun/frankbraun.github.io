@@ -25,6 +25,8 @@ const header = `<meta name="viewport" content="width=device-width, initial-scale
 <main>
 `
 
+const donation = `<p>(<em>If you like my work, please consider <a href="https://frankbraun.org/donate">making a donation</a>.</em>)</p>`
+
 const footer = `</main>
 </body>
 </html>
@@ -97,6 +99,11 @@ func buildPage() error {
 				}
 				if _, err := fp.Write(out.Bytes()); err != nil {
 					return err
+				}
+				if path != "donate/index.md" {
+					if _, err := fp.WriteString(donation); err != nil {
+						return err
+					}
 				}
 				if _, err := fp.WriteString(footer); err != nil {
 					return err
