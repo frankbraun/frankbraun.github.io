@@ -1,6 +1,7 @@
 # Donations
 
 If you like my work, please consider a donation.
+
 If your favorite cryptocurrency is not listed **and** you want to make a
 donation, please [contact me](https://frankbraun.org#contact).
 
