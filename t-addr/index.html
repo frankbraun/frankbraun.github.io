@@ -8,7 +8,7 @@
 </head>
 <body>
 <main>
-<h1>Why I changed my mind on t-addresses in Zcash</h1>
+<h1 id="why-i-changed-my-mind-on-t-addresses-in-zcash">Why I changed my mind on t-addresses in Zcash</h1>
 <p><em>by <a href="https://frankbraun.org">Frank Braun</a>, 2025-07-11</em></p>
 <p>In Zcash there are two kind of addresses: transparent addresses (or t-addresses) and shielded addresses (or z-addresses).</p>
 <p>Transparent addresses work very similar to addresses in Bitcoin. Shielded addresses employ zero-knowledge proofs in order to hide the sender, recipient, and amount of a transaction on the blockchain. The only information that remains visible for shielded transaction is that <em>a</em> transaction took place and nothing more.</p>
@@ -28,7 +28,7 @@ For the purpose of this discussion we only consider the Orchard pool.</p>
 <li>That Zcash should get rid of t-addresses and also become &quot;private by default&quot;.</li>
 </ol>
 <p>I used to utter the same reasoning, but now believe it to be wrong on both counts.</p>
-<h2>A different perspective</h2>
+<h2 id="a-different-perspective">A different perspective</h2>
 <p>&quot;A change in perspective is worth 80 IQ points.&quot;<br>
 — Alan Kay</p>
 <p>I think the argument is best understood by looking at the situation from a different perspective and not conflating theory and practice.</p>
@@ -52,7 +52,7 @@ For the purpose of this discussion we only consider the Orchard pool.</p>
 <li>The privacy of shielded transactions in Zcash with the privacy of Monero transactions.</li>
 <li>The integration into the wider crypto ecosystem of Zcash (considering t-addresses as well) and Monero.</li>
 </ol>
-<h2>Privacy comparison</h2>
+<h2 id="privacy-comparison">Privacy comparison</h2>
 <p>Much has been written about it, but I think it's fair to say that cryptographers agree that, just comparing the privacy of shielded transactions in Zcash with Monero transactions, Zcash has the better privacy properties.</p>
 <p>From my understanding, Zcash offers you the theoretically possible maximum of privacy for on chain transactions and Monero doesn't. There are ongoing discussions of how much information can be derived from Monero transactions, what usage patterns are better for your privacy and which aren't, and so on.</p>
 <p>I don't know about you, but when it comes to privacy in transactions, I just want the best possible and not think about potential weaknesses, how to use it best, and so on.</p>
@@ -60,7 +60,7 @@ For the purpose of this discussion we only consider the Orchard pool.</p>
 <p>The much quoted potential Zcash weakness of the trusted setup doesn't apply to the Orchard shielded pool anymore, so that's a non issue these days.</p>
 <p>The much quoted Zcash weakness of not being &quot;private by default&quot; has been almost entirely removed by the <a href="https://electriccoin.co/zashi/">Zashi wallet</a>, see below.</p>
 <p>I'm aware that Monero is working on an upgrade to Full-Chain Membership Proofs (FCMPs), called FCMP++, which will improve the privacy properties of Monero, but I'm considering here what is <em>available today</em>.</p>
-<h2>Integration into the wider ecosystem</h2>
+<h2 id="integration-into-the-wider-ecosystem">Integration into the wider ecosystem</h2>
 <p>I believe that the release and wider adoption of the Zashi mobile wallet is a <em>game changer</em> for Zcash. Zcash has been described by some as the Apollo program of crypto and with the Zashi wallet in the ecosystem it's finally ready for lift-off.</p>
 <p>So what does Zashi do that makes it such a game changer?</p>
 <p>It supports signing of shielding, unshielding, and shielded transactions, but not transparent transactions. That is, it can send and receive both transparent and shielded transactions, but every received transparent UTXO first needs to be shielded before it can be spend again, either transparently (as an unshielding transaction) or privately (as a shielded transaction).</p>
@@ -70,13 +70,13 @@ For the purpose of this discussion we only consider the Orchard pool.</p>
 <p>It also integrates with the Keystone Hardware Wallet, which for the first time lets you <em>store</em> and <em>spend</em> Orchard-pool Zcash on a hardware wallet. Other hardware wallets, like Trezor and Ledger, only support t-addresses. I agree with Zooko and others from the Zcash community that <em>privacy at rest</em> is even more important than <em>privacy in flight</em>. In short, the argument is that if you just use privacy in flight it's quite easy to deanonymize you by correlating amounts and timing transaction going in and out of a shielded pool. That is, the longer funds are in a shielded pool, privately held at rest, the harder it is deanonymize them, because they are &quot;mixed&quot; with more and more other funds.</p>
 <p>And with Zashi plus they Keystone hardware wallet integration it's now possible to both hold smaller (just in Zashi) and larger (combined with Keystone) ZEC amounts in a shielded pool, thereby increasing your own and everybody else's privacy at rest in the process.</p>
 <p>As you can see on the <a href="https://zechub.wiki/dashboard">ZecHub Dashboard</a>, the amount of ZEC in the shielded pools has more than doubled in the last year and almost 14% of the circulating ZEC supply is held in the Orchard shielded pool now, trend increasing.</p>
-<h2>Increased pluggability  and optional visibility</h2>
+<h2 id="increased-pluggability--and-optional-visibility">Increased pluggability  and optional visibility</h2>
 <p>A lot in crypto is about the <em>pluggability</em> of a coin into the wider ecosystem. That's why things like EVM compatiblity matter for L1s and L2s, for example. And for Zcash having t-addresses and transparent transactions, which are very similar to Bitcoin addresses and transactions, means it's much easier to plug Zcash into the wider ecosystem. DEX integrations usually start with t-address support, because they basically just have to port the corresponding Bitcoin code, and can then later progress to implementing fully shielded support, like it's the case with <a href="https://leodex.io">LeoDex</a>.</p>
 <p>Another example of a recent DEX adding support for ZEC with transparent addresses is <a href="https://app.near-intents.org">NEAR Intents</a>.</p>
 <p>I believe this higher pluggablity of Zcash compared to Monero is the reason why there are more DEXs supporting Zcash than Monero and there is currently no cross-chain liquidity-pool DEX that supports XMR. And DEXs are very important for both privacy reasons (no KYC &amp; AML nonsense) and usability (again, no KYC &amp; AML nonsense).</p>
 <p>Furthermore, t-addresses can also increase <em>visibility</em> for the use-cases where it actually makes sense. If I'm using a DEX, as a user I want to be as private as possible. But I want visibility into what's happening inside the DEX, because how else am I supposed to verify that the DEX is operating as advertised? So <em>optional visibility</em> is actually a feature and not a bug.</p>
 <p>And just for completeness, having t-addresses allows for use-cases where one actually wants full transparency of the funds <em>at rest</em>. For example, using t-addresses for the cold wallet of exchanges or custody providers, allows easy <em>auditability</em> and <em>proof of funds</em>.</p>
-<h2>Conclusion</h2>
+<h2 id="conclusion">Conclusion</h2>
 <p>Given recent developments, mostly around Zashi, I changed my mind regarding t-addresses in Zcash. With what's already here (plus future work below) we can have:</p>
 <ul>
 <li>privacy by default, independent of third parties</li>
@@ -84,7 +84,7 @@ For the purpose of this discussion we only consider the Orchard pool.</p>
 <li>optional visibility and auditability</li>
 </ul>
 <p>Given a deeper integration into the wider crypto ecosystem (see below) and the arguments made above for the importance of privacy at rest there is also an argument to be made why value should accrue to ZEC the token: There is simply no other privacy coin in the market with both deep integration, optional visibility, and best in class privacy.</p>
-<h2>Future work</h2>
+<h2 id="future-work">Future work</h2>
 <p>Most importantly, Zashi currently only supports one fixed t-address, which is bad for privacy if t-addresses are used. Fixing that issue is on the Zashi roadmap, I argue on the <a href="https://forum.zcashcommunity.com/t/why-does-zashi-only-allow-1-transparent-address/51538/7">Zcash forum</a> how I would design the UX in order to balance usability and privacy issues.</p>
 <p>More options for storing and spending shielded Zcash on more widely used hardware wallets, like Trezor and Ledger, would be great. Until then, Keystone will get all the business for that use case and it will keep some Zcash users from storing ZEC long-term in a shielded pool. Personally, while I'm waiting for my Keystone wallet to arrive, I'm still storing most of my ZEC on a Trezor in a t-address.</p>
 <p>Multisig support for hardware wallets, to be able to store very large amounts and for custodial setups with more than one signer, would also be very beneficial.</p>

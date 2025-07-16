@@ -10,6 +10,7 @@ import (
 	"strings"
 
 	"github.com/yuin/goldmark"
+	"github.com/yuin/goldmark/parser"
 )
 
 const doctype = `<!doctype html>
@@ -50,6 +51,7 @@ func readFirstLine(filename string) (string, error) {
 }
 
 func buildPage() error {
+	md := goldmark.New(goldmark.WithParserOptions(parser.WithAutoHeadingID()))
 	// find all .md files in tree
 	err := filepath.WalkDir(".", func(path string, d fs.DirEntry, err error) error {
 		if err != nil {
@@ -66,7 +68,7 @@ func buildPage() error {
 
 				// convert it to HTML
 				var out bytes.Buffer
-				if err := goldmark.Convert(in, &out); err != nil {
+				if err := md.Convert(in, &out); err != nil {
 					return err
 				}
 
