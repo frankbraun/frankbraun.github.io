@@ -1,0 +1,1 @@
+qrencode -s 5 -o pic.png address
