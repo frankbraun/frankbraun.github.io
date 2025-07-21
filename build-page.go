@@ -114,11 +114,7 @@ func buildPage() error {
 		}
 		return nil
 	})
-	if err != nil {
-		return err
-	}
-
-	return nil
+	return err
 }
 
 func fatal(err error) {
