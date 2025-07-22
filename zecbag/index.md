@@ -120,7 +120,7 @@ You can potentially see the total revenue of a business, their customers, their 
 
 For example, there is good reason why a lot of HR departments consider the pay structure one of the most closely guarded secrets of the company. If you start paying your employees with crypto (including stable coins), employees can easily see all other payments, just in pseudonymized form.
 
-Bank secrecy laws and consumer data protection laws (like GDPR) exist for a reason. I'm not a lawyer, but I would argue that exposing all of that data clashes with some of these regulations.
+Bank secrecy laws and consumer data protection laws (like GDPR) exist for a reason. I'm not [a lawyer](https://inplp.com/latest-news/article/blockchain-vs-data-protection/), but I would argue that exposing all of that data clashes with some of these regulations.
 
 **Commerce simply doesn't work without privacy.**
 
