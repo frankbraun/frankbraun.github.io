@@ -13,6 +13,7 @@ See [my "now" page](/now).
 
 ## Posts
 
+- [My Zcash investment thesis](/zecbag) (2025-07-22)
 - [Why I changed my mind on t-addresses in Zcash](/t-addr) (2025-07-11)
 - [Cryptocurrencies as Cyberstatism](/essay/cryptocurrencies-as-cyberstatism) (2020-01-06)
 
