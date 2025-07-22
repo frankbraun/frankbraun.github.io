@@ -59,8 +59,8 @@ func writeCard(fp *os.File, title string) error {
 		return err
 	}
 	fmt.Fprintf(fp, "<meta property=\"og:title\" content=\"%s\">\n", title)
-	//<meta property="og:description" content="NASA’s latest rover images reveal...">
-	//<meta property="og:image"       content="https://example.com/img/cat‑rover.jpg">
+	fmt.Fprintf(fp, "<meta property=\"og:description\" content=\"Add description here.\">\n")
+	fmt.Fprintf(fp, "<meta property=\"og:image\" content=\"https://frankbraun.org/img/frank-braun.png\">\n")
 	return nil
 }
 
