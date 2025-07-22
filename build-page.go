@@ -19,7 +19,7 @@ const doctype = `<!doctype html>
 <meta charset="utf-8">
 `
 
-const header = `<meta name="viewport" content="width=device-width, initial-scale=1.0">
+const closeHeader = `<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="https://frankbraun.org/css/water.css">
 </head>
 <body>
@@ -65,25 +65,21 @@ func buildPage() error {
 				if err != nil {
 					return err
 				}
-
 				// convert it to HTML
 				var out bytes.Buffer
 				if err := md.Convert(in, &out); err != nil {
 					return err
 				}
-
 				// create .html file
 				fp, err := os.Create(strings.TrimSuffix(path, ".md") + ".html")
 				if err != nil {
 					return err
 				}
 				defer fp.Close()
-
 				title, err := readFirstLine(path)
 				if err != nil {
 					return err
 				}
-
 				// write HTML to .html file
 				if _, err := fp.WriteString(doctype); err != nil {
 					return err
@@ -96,7 +92,7 @@ func buildPage() error {
 				if _, err := fp.WriteString(s); err != nil {
 					return err
 				}
-				if _, err := fp.WriteString(header); err != nil {
+				if _, err := fp.WriteString(closeHeader); err != nil {
 					return err
 				}
 				if _, err := fp.Write(out.Bytes()); err != nil {
