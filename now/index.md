@@ -6,8 +6,7 @@
 
 ## Crypto again
 
-I'm deep in the rabbit hole trying to wrap my head around the
-[Zcash](https://z.cash) ecosystem.
+I'm deep in the rabbit hole trying to wrap my head around the Zcash ecosystem.
 
 ## Moving
 
