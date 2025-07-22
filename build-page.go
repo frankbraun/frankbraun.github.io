@@ -73,6 +73,7 @@ func getDescription(filename string) (string, error) {
 		if strings.HasPrefix(l, "# ") ||
 			l == "" ||
 			strings.HasPrefix(l, "*by") ||
+			strings.HasPrefix(l, "**") ||
 			strings.HasPrefix(l, "## ") ||
 			strings.HasPrefix(l, "(") {
 			continue
