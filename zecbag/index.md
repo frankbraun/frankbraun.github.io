@@ -10,7 +10,7 @@ It's also not meant as input for short-term trading, I'm not interested in that 
 
 ## Starting point
 
-Bitcoin is king and it's sucking in more capital than a drunken Saylor could spent.
+Bitcoin is king and it's sucking in more capital than a drunken Saylor could spend.
 
 The narrative has shifted from electronic cash to *store of value* (SoV) and *digital gold*, with the [mempool](https://mempool.space) being pretty empty, resulting in low on-chain transaction fees.
 
