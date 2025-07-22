@@ -41,7 +41,7 @@ The EU is leading the way again in regulation with MiCA, the only area where the
 
 I think it's safe to say that Bitcoin has been institutionalized. Bitcoin Maxis are cheering for Michael Saylor, ETFs, and even strategic Bitcoin reserves, ignoring that they will be the ones paying for the Bitcoins in the reserve. Or the ones from whom the Bitcoin for the reserves will be confiscated.
 
-There are various L2 solution trying to add privacy to Bitcoin, I'll write in another post why I don't think these will add privacy to Bitcoin in any meaningful way. I hope I'm wrong, though, and projects like [Fedimint](https://fedimint.org/) and [Cashu](https://cashu.mu) get mainstream adoption.
+There are various L2 solution trying to add privacy to Bitcoin, I'll write in another post why I don't think these will add privacy to Bitcoin in any meaningful way. I hope I'm wrong, though, and projects like [Fedimint](https://fedimint.org/) and [Cashu](https://cashu.me) get mainstream adoption.
 
 The problem with cypherpunks and privacy geeks like myself is that we tend to extrapolate our own preferences to the general population, which usually isn't true and leads to terrible investment decisions.
 
