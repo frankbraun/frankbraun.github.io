@@ -18,6 +18,10 @@ const doctype = `<!doctype html>
 <head>
 <meta charset="utf-8">
 `
+const twitterCard = `<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@thefrankbraun">
+<meta name="twitter:creator" content="@thefrankbraun">
+`
 
 const closeHeader = `<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="https://frankbraun.org/css/water.css">
@@ -48,6 +52,16 @@ func readFirstLine(filename string) (string, error) {
 		return "", err
 	}
 	return "", fmt.Errorf("file '%s' is empty\n")
+}
+
+func writeCard(fp *os.File, title string) error {
+	if _, err := fp.WriteString(twitterCard); err != nil {
+		return err
+	}
+	fmt.Fprintf(fp, "<meta property=\"og:title\" content=\"%s\">\n", title)
+	//<meta property="og:description" content="NASA’s latest rover images reveal...">
+	//<meta property="og:image"       content="https://example.com/img/cat‑rover.jpg">
+	return nil
 }
 
 func buildPage() error {
@@ -90,6 +104,9 @@ func buildPage() error {
 				}
 				s += "</title>\n"
 				if _, err := fp.WriteString(s); err != nil {
+					return err
+				}
+				if err := writeCard(fp, title); err != nil {
 					return err
 				}
 				if _, err := fp.WriteString(closeHeader); err != nil {
