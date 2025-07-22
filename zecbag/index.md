@@ -89,7 +89,9 @@ So hiding wealth becomes more and more important, not just for people evading ta
 
 ## Zcash vs. Monero
 
-As has been argued in [another post](https://frankbraun.org/t-addr), Zcash has better privacy if shielded transactions are used, but only 14% of ZEC are currently in shielded pools. That's quickly increasing due to the "Zashi  effect" and due to the support for shielded transactions in the [Keystone](https://keyst.one/). Ledger support for shielded transactions is [in the making](https://forum.zcashcommunity.com/t/a-path-forward-for-ledger-and-zcash/50951).
+As has been argued in [another post](https://frankbraun.org/t-addr), Zcash has
+better privacy if shielded transactions are used, but only 19.5% of ZEC in
+circulation are currently in shielded pools. That's quickly increasing due to the "Zashi  effect" and due to the support for shielded transactions in the [Keystone](https://keyst.one/). Ledger support for shielded transactions is [in the making](https://forum.zcashcommunity.com/t/a-path-forward-for-ledger-and-zcash/50951).
 
 Holding ZEC in a shielded pool for a long time gives you better privacy, thereby increasing demand for the token. Higher TVL in the shielded pool makes it more attractive for anonymizing larger amount of funds, thereby increasing demand for ZEC. It's a virtuous privacy cycle, if the market decides to adopt it.
 
