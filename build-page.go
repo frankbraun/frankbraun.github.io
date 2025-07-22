@@ -51,15 +51,50 @@ func readFirstLine(filename string) (string, error) {
 	if err := scanner.Err(); err != nil {
 		return "", err
 	}
-	return "", fmt.Errorf("file '%s' is empty\n")
+	return "", fmt.Errorf("file is empty: %s", filename)
 }
 
-func writeCard(fp *os.File, title string) error {
+func truncateString(s string, maxLength int) string {
+	if len(s) <= maxLength-3 {
+		return s
+	}
+	return s[:maxLength-3] + "..."
+}
+
+func getDescription(filename string) (string, error) {
+	fp, err := os.Open(filename)
+	if err != nil {
+		return "", err
+	}
+	defer fp.Close()
+	scanner := bufio.NewScanner(fp)
+	for scanner.Scan() {
+		l := scanner.Text()
+		if strings.HasPrefix(l, "# ") ||
+			l == "" ||
+			strings.HasPrefix(l, "*by") ||
+			strings.HasPrefix(l, "## ") ||
+			strings.HasPrefix(l, "(") {
+			continue
+		}
+		return truncateString(l, 150), nil
+	}
+	if err := scanner.Err(); err != nil {
+		return "", err
+	}
+	return "", fmt.Errorf("no description found in: %s", filename)
+}
+
+func writeCard(fp *os.File, title, path string) error {
+	desc, err := getDescription(path)
+	if err != nil {
+		return err
+	}
 	if _, err := fp.WriteString(twitterCard); err != nil {
 		return err
 	}
 	fmt.Fprintf(fp, "<meta property=\"og:title\" content=\"%s\">\n", title)
-	fmt.Fprintf(fp, "<meta property=\"og:description\" content=\"Add description here.\">\n")
+	fmt.Fprintf(fp, "<meta property=\"og:description\" content=\"%s\">\n", desc)
 	fmt.Fprintf(fp, "<meta property=\"og:image\" content=\"https://frankbraun.org/img/frank-braun.png\">\n")
 	return nil
 }
@@ -106,7 +141,7 @@ func buildPage() error {
 				if _, err := fp.WriteString(s); err != nil {
 					return err
 				}
-				if err := writeCard(fp, title); err != nil {
+				if err := writeCard(fp, title, path); err != nil {
 					return err
 				}
 				if _, err := fp.WriteString(closeHeader); err != nil {

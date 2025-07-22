@@ -4,13 +4,9 @@
 
 ## Prelude
 
-(Note: Most of this prelude has been put on
-[Twitter](https://twitter.com/thefrankbraun/status/1213190589149265922)
-before, the impatient reader might want to skip to section
-[Cyberstatism](#cyberstatism))
+(Note: Most of this prelude has been put on [Twitter](https://twitter.com/thefrankbraun/status/1213190589149265922) before, the impatient reader might want to skip to section [Cyberstatism](#cyberstatism))
 
-I have been wondering for a long time why cryptocurrencies in general
-and Bitcoin especially became so, for lack of a better word, toxic.
+I have been wondering for a long time why cryptocurrencies in general and Bitcoin especially became so, for lack of a better word, toxic.
 
 Maybe it's just my personal experience and that experience is totally
 subjective, but to me it seems that the level of hostility experienced
