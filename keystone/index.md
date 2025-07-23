@@ -12,7 +12,7 @@ After unboxing (nice experience, but we are not on YouTube here) I installed the
 
 Creating a new 24 word seed phrase and writing it down was pretty straightforward. The mandatory verification comprises selecting the 24 words on the display in the right order which worked just fine, but I have seen better designs from a UX perspective. While the display and device has a very nice size and works well for normal operations, scrolling the word list up and down and selecting the words in order felt a bit clumsy to me.
 
-After that hurdle had been taken, connecting the Keystone to Zashi was very straightforward. After that Zashi allows you to switch between the two "accounts" on the upper left (test was on iOS).
+After that hurdle has been taken, connecting the Keystone to Zashi was very straightforward. After that Zashi allows you to switch between the two "accounts" on the upper left (test was on iOS).
 
 ![Zashi account switcher](https://frankbraun.org/img/zashi.png)
 
@@ -23,7 +23,7 @@ Sending shielded ZEC to the Keystone is pretty straightforward. You can either j
 Signing a shielded transaction on the Keystone is a simple process in Zashi:
 
 1. Switch to the Keystone "account".
-2. Prepare the transaction as with a normal Zashi transaction.
+2. Prepare the transaction as with a normal transaction in Zashi.
 3. Press `"Confirm with Keystone"`.
 4. Scan the QR code with the Keystone.
 5. Review and sign the transaction on the Keystone.
@@ -37,7 +37,7 @@ Shamir's Secret Sharing (SLIP39) seed phrases don't seem to work with ZEC on the
 
 When entering the last number of a numerical PIN the gray dot doesn't turn orange before unlocking, see [GithHub issue](https://github.com/KeystoneHQ/keystone3-firmware/issues/1856). Not a big issue, but my obsessive brain doesn't like it.
 
-"When you’re a carpenter making a beautiful chest of drawers, you’re not going to use a piece of plywood on the back, even though it faces the wall and nobody will ever see it. You’ll know it’s there, so you’re going to use a beautiful piece of wood on the back. For you to sleep well at night, the aesthetic, the quality, has to be carried all the way through."
+"When you’re a carpenter making a beautiful chest of drawers, you’re not going to use a piece of plywood on the back, even though it faces the wall and nobody will ever see it. You’ll know it’s there, so you’re going to use a beautiful piece of wood on the back. For you to sleep well at night, the aesthetic, the quality, has to be carried all the way through."  
 — Steve Jobs
 
 ## Conclusion
