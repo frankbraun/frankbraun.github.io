@@ -46,7 +46,8 @@ Having a **fully airgapped** [Keystone 3 Pro](https://keyst.one/shop/products/ke
 
 I'm looking forward to the upcoming Ledger support for shielded Zcash and I hope that Trezor revives their efforts to add shielded Zcash support. But having such a smooth experience transferring unsigned transactions to and signed transaction from the Keystone via QR codes has a totally different feel to it than fiddling with small buttons on a Ledger Nano X or Nano S Plus.
 
-And the fully airgapped setup puts it on par with Bitcoin setups like Coinkite's Coldcard or Foundation's Passport.
+And the fully airgapped setup puts it on par with Bitcoin setups using hardware
+wallets like Coinkite's Coldcard or Foundation's Passport.
 
 I think that such hardware wallet support for *shielded Zcash transations* is absolutely necessary in order to set the flywheel in motion that I describe in my [Zcash investment thesis](https://frankbraun.org/zecbag/).
 
