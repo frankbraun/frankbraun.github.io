@@ -1,4 +1,4 @@
-# Keystone HW wallet test with shielded Zcash
+# Keystone hardware wallet test with shielded Zcash
 
 *by [Frank Braun](https://frankbraun.org), 2025-07-23*
 
