@@ -16,7 +16,10 @@ After that hurdle has been taken, connecting the Keystone to Zashi was very stra
 
 ![Zashi account switcher](https://frankbraun.org/img/zashi.png)
 
-Sending shielded ZEC to the Keystone is pretty straightforward. You can either just scan the QR code on the Keystone directly or select the Keystone wallet address in the list of recipients in Zashi.
+Sending shielded ZEC to the Keystone is pretty straightforward. You can either
+scan the QR code on the Keystone directly or just select the Keystone wallet
+address in the list of recipients in Zashi (where it's automatically and
+prominently put on the top).
 
 ## Signing a shielded transaction
 
