@@ -32,7 +32,7 @@ Signing a shielded transaction on the Keystone is a simple process in Zashi:
 5. Review and sign the transaction on the Keystone.
 6. Press `"Get Signature"` on Zashi and scan the signed transaction QR code from the Keystone.
 
-Zashi automatically transmits the transaction and done.
+Zashi automatically transmits the transaction and *done*.
 
 ## Open issues
 
