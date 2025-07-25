@@ -1,6 +1,6 @@
 # Cryptocurrencies as Cyberstatism
 
-*by [Frank Braun](https://frankbraun.org), 2020-01-06*
+*by [Frank Braun](/), 2020-01-06*
 
 ## Prelude
 

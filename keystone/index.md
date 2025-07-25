@@ -1,12 +1,12 @@
 # Keystone hardware wallet test with shielded Zcash
 
-*by [Frank Braun](https://frankbraun.org), 2025-07-23*
+*by [Frank Braun](/), 2025-07-23*
 
 **Disclaimer: I don't have any relation with the Keystone company and paid for the hardware wallet myself.**
 
 I finally got my hands on a Keystone 3 Pro hardware wallet in order to test it with the Zashi mobile wallet.
 
-![Keystone hardware wallet](https://frankbraun.org/img/keystone.jpg)
+![Keystone hardware wallet](/img/keystone.jpg)
 
 After unboxing (nice experience, but we are not on YouTube here) I installed the Cypherpunk 2.0.4 [firmware](https://keyst.one/firmware) via SD card, in order to get shielded ZEC support. The same firmware also supports Monero (XMR) and Bitcoin (BTC) transactions, but I haven't tested those.
 
@@ -14,7 +14,7 @@ Creating a new 24 word seed phrase and writing it down was pretty straightforwar
 
 After that hurdle has been taken, connecting the Keystone to Zashi was very straightforward. After that Zashi allows you to switch between the two "accounts" on the upper left (test was on iOS).
 
-![Zashi account switcher](https://frankbraun.org/img/zashi.png)
+![Zashi account switcher](/img/zashi.png)
 
 Sending shielded ZEC to the Keystone is pretty straightforward. You can either
 scan the QR code on the Keystone directly or just select the Keystone wallet
@@ -52,6 +52,6 @@ I'm looking forward to the upcoming Ledger support for shielded Zcash and I hope
 And the fully airgapped setup puts it on par with Bitcoin setups using hardware
 wallets like Coinkite's Coldcard or Foundation's Passport.
 
-I think that such hardware wallet support for *shielded Zcash transations* is absolutely necessary in order to set the flywheel in motion that I describe in my [Zcash investment thesis](https://frankbraun.org/zecbag/).
+I think that such hardware wallet support for *shielded Zcash transations* is absolutely necessary in order to set the flywheel in motion that I describe in my [Zcash investment thesis](/zecbag).
 
 The cypherpunk future of unstoppable private money is here — it's just not very evenly distributed yet.

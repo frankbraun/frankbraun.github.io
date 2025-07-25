@@ -1,6 +1,6 @@
 # My Zcash investment thesis
 
-*by [Frank Braun](https://frankbraun.org), 2025-07-22*
+*by [Frank Braun](/), 2025-07-22*
 
 **This is not financial advice and just my personal analysis. Please do your own research.**
 
