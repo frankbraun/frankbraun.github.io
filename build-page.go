@@ -25,6 +25,7 @@ const twitterCard = `<meta name="twitter:card" content="summary">
 
 const closeHeader = `<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="https://frankbraun.org/css/water.css">
+<link rel="alternate" type="application/atom+xml" title="Frank Braun" href="https://frankbraun.org/atom.xml" />
 </head>
 <body>
 <main>
