@@ -8,6 +8,7 @@ import (
 	"os"
 	"path/filepath"
 	"strings"
+	"time"
 
 	"github.com/yuin/goldmark"
 	"github.com/yuin/goldmark/parser"
@@ -174,6 +175,48 @@ func buildPage() error {
 	return err
 }
 
+func fileTime(filename string) (time.Time, error) {
+	fi, err := os.Stat(filename)
+	if err != nil {
+		return time.Now(), err
+	}
+	return fi.ModTime(), nil
+}
+
+func isNewer(fileA, fileB string) (bool, error) {
+	tA, err := fileTime(fileA)
+	if err != nil {
+		return false, err
+	}
+	tB, err := fileTime(fileB)
+	if err != nil {
+		return false, err
+	}
+	return tA.After(tB), nil
+}
+
+func writeFeed() error {
+	ok, err := isNewer("index.md", "atom.xml")
+	if err != nil {
+		return err
+	}
+	if !ok {
+		return nil
+	}
+	fp, err := os.Create("atom.xml")
+	if err != nil {
+		return err
+	}
+	defer fp.Close()
+	if _, err := fp.WriteString(atomHeader); err != nil {
+		return err
+	}
+	if _, err := fp.WriteString(atomFooter); err != nil {
+		return err
+	}
+	return nil
+}
+
 func fatal(err error) {
 	fmt.Fprintf(os.Stderr, "%s: error: %s\n", os.Args[0], err)
 	os.Exit(1)
@@ -181,6 +224,9 @@ func fatal(err error) {
 
 func main() {
 	if err := buildPage(); err != nil {
+		fatal(err)
+	}
+	if err := writeFeed(); err != nil {
 		fatal(err)
 	}
 }
