@@ -25,7 +25,7 @@ const twitterCard = `<meta name="twitter:card" content="summary">
 
 const closeHeader = `<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="/css/water.css">
-<link rel="alternate" type="application/atom+xml" title="Frank Braun" href="/atom.xml" />
+<link rel="alternate" type="application/atom+xml" title="Frank Braun" href="/atom.xml">
 </head>
 <body>
 <main>
@@ -36,6 +36,13 @@ const donation = `<p>(<em>If you like my work, please consider <a href="/donate"
 const footer = `</main>
 </body>
 </html>
+`
+
+const atomHeader = `<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+`
+
+const atomFooter = `</feed>
 `
 
 func readFirstLine(filename string) (string, error) {
