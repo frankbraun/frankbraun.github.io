@@ -41,6 +41,9 @@ const footer = `</main>
 
 const atomHeader = `<?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+<title>Frank Braun</title>
+<id>https://frankbraun.org/atom.xml</id>
+<link rel="alternate" type="text/html" href="/">
 `
 
 const atomFooter = `</feed>
@@ -209,6 +212,12 @@ func writeFeed() error {
 	}
 	defer fp.Close()
 	if _, err := fp.WriteString(atomHeader); err != nil {
+		return err
+	}
+	s := "<updated>"
+	s += time.Now().UTC().Format(time.RFC3339)
+	s += "</updated>\n"
+	if _, err := fp.WriteString(s); err != nil {
 		return err
 	}
 	if _, err := fp.WriteString(atomFooter); err != nil {
