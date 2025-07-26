@@ -2,4 +2,9 @@
 |       | time   |perfectly | time   |            |
 |source |------->| private  |------->|destination |
 |       | value  |   SoV    | value  |            |
-'-------'        '----------'        '------------'
+'-------'        '-+--------'        '------------'
+                   |      ^
+                   |      |
+                    '-----'
+                  nothing to
+                   see here
