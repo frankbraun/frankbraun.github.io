@@ -264,15 +264,13 @@ func writeFeedEntries(fp *os.File) error {
 }
 
 func writeFeed() error {
-	/*
-		ok, err := isNewer("index.md", "atom.xml")
-		if err != nil {
-			return err
-		}
-		if !ok {
-			return nil
-		}
-	*/
+	ok, err := isNewer("index.md", "atom.xml")
+	if err != nil {
+		return err
+	}
+	if !ok {
+		return nil
+	}
 	fp, err := os.Create("atom.xml")
 	if err != nil {
 		return err
