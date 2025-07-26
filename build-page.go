@@ -7,6 +7,7 @@ import (
 	"io/fs"
 	"os"
 	"path/filepath"
+	"regexp"
 	"strings"
 	"time"
 
@@ -198,14 +199,71 @@ func isNewer(fileA, fileB string) (bool, error) {
 	return tA.After(tB), nil
 }
 
-func writeFeed() error {
-	ok, err := isNewer("index.md", "atom.xml")
+func writeFeedEntry(fp *os.File, desc string) error {
+	re := regexp.MustCompile(`\[(.*?)\]\((.*?)\) \((.*?)\)`)
+	matches := re.FindStringSubmatch(desc)
+	if len(matches) != 4 {
+		return fmt.Errorf("cannot match post line: %s", desc)
+	}
+	title := matches[1]
+	link := matches[2]
+	date := matches[3]
+	s := "<entry>\n"
+	s += "  <title>" + title + "</title>\n"
+	s += "  <id>https://frankbraun.org" + link + "</id>\n"
+	s += "  <updated>" + date + "T00:00:00Z" + "</updated>\n"
+	s += "</entry>\n"
+	if _, err := fp.WriteString(s); err != nil {
+		return err
+	}
+	return nil
+}
+
+func writeFeedEntries(fp *os.File) error {
+	fmt.Println("write feed entries")
+	ip, err := os.Open("index.md")
 	if err != nil {
 		return err
 	}
-	if !ok {
-		return nil
+	defer ip.Close()
+	scanner := bufio.NewScanner(ip)
+	for scanner.Scan() {
+		l := scanner.Text()
+		if l == "## Posts" {
+			break
+		}
 	}
+	if err := scanner.Err(); err != nil {
+		return err
+	}
+	for scanner.Scan() {
+		l := scanner.Text()
+		if l == "" {
+			continue
+		}
+		if strings.HasPrefix(l, "#") {
+			break
+		}
+		if strings.HasPrefix(l, "- ") {
+			err := writeFeedEntry(fp, strings.TrimPrefix(l, "- "))
+			if err != nil {
+				return err
+			}
+		}
+	}
+	return scanner.Err()
+}
+
+func writeFeed() error {
+	/*
+		ok, err := isNewer("index.md", "atom.xml")
+		if err != nil {
+			return err
+		}
+		if !ok {
+			return nil
+		}
+	*/
 	fp, err := os.Create("atom.xml")
 	if err != nil {
 		return err
@@ -218,6 +276,9 @@ func writeFeed() error {
 	s += time.Now().UTC().Format(time.RFC3339)
 	s += "</updated>\n"
 	if _, err := fp.WriteString(s); err != nil {
+		return err
+	}
+	if err := writeFeedEntries(fp); err != nil {
 		return err
 	}
 	if _, err := fp.WriteString(atomFooter); err != nil {
