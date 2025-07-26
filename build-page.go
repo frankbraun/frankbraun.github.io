@@ -214,6 +214,7 @@ func writeFeedEntry(fp *os.File, desc string) error {
 	}
 	s := "<entry>\n"
 	s += "  <title>" + title + "</title>\n"
+	s += "  <author>Frank Braun</author>\n"
 	s += "  <id>https://frankbraun.org" + link + "</id>\n"
 	s += "  <link rel=\"alternate\" type=\"text/html\" href=\"https://frankbraun.org" + link + "\"/>\n"
 	s += "  <updated>" + date + "T00:00:00Z" + "</updated>\n"
