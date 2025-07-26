@@ -208,10 +208,16 @@ func writeFeedEntry(fp *os.File, desc string) error {
 	title := matches[1]
 	link := matches[2]
 	date := matches[3]
+	desc, err := getDescription(strings.TrimPrefix(link, "/") + "/index.md")
+	if err != nil {
+		return err
+	}
 	s := "<entry>\n"
 	s += "  <title>" + title + "</title>\n"
 	s += "  <id>https://frankbraun.org" + link + "</id>\n"
+	s += "  <link rel=\"alternate\" type=\"text/html\" href=\"https://frankbraun.org" + link + ">\n"
 	s += "  <updated>" + date + "T00:00:00Z" + "</updated>\n"
+	s += "  <summary>" + desc + "</summary>\n"
 	s += "</entry>\n"
 	if _, err := fp.WriteString(s); err != nil {
 		return err
@@ -220,7 +226,6 @@ func writeFeedEntry(fp *os.File, desc string) error {
 }
 
 func writeFeedEntries(fp *os.File) error {
-	fmt.Println("write feed entries")
 	ip, err := os.Open("index.md")
 	if err != nil {
 		return err

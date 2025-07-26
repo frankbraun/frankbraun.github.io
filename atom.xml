@@ -3,25 +3,33 @@
 <title>Frank Braun</title>
 <id>https://frankbraun.org/atom.xml</id>
 <link rel="alternate" type="text/html" href="/">
-<updated>2025-07-26T09:28:19Z</updated>
+<updated>2025-07-26T09:34:25Z</updated>
 <entry>
   <title>Keystone hardware wallet test with shielded Zcash</title>
   <id>https://frankbraun.org/keystone</id>
+  <link rel="alternate" type="text/html" href="https://frankbraun.org/keystone>
   <updated>2025-07-23T00:00:00Z</updated>
+  <summary>I finally got my hands on a Keystone 3 Pro hardware wallet in order to test it with the Zashi mobile wallet.</summary>
 </entry>
 <entry>
   <title>My Zcash investment thesis</title>
   <id>https://frankbraun.org/zecbag</id>
+  <link rel="alternate" type="text/html" href="https://frankbraun.org/zecbag>
   <updated>2025-07-22T00:00:00Z</updated>
+  <summary>I simply share my analysis of why I think that Zcash (ZEC) might be a good investment mid- to long-term as a high beta play, this post is not an id...</summary>
 </entry>
 <entry>
   <title>Why I changed my mind on t-addresses in Zcash</title>
   <id>https://frankbraun.org/t-addr</id>
+  <link rel="alternate" type="text/html" href="https://frankbraun.org/t-addr>
   <updated>2025-07-11T00:00:00Z</updated>
+  <summary>In Zcash there are two kind of addresses: transparent addresses (or t-addresses) and shielded addresses (or z-addresses).</summary>
 </entry>
 <entry>
   <title>Cryptocurrencies as Cyberstatism</title>
   <id>https://frankbraun.org/essay/cryptocurrencies-as-cyberstatism</id>
+  <link rel="alternate" type="text/html" href="https://frankbraun.org/essay/cryptocurrencies-as-cyberstatism>
   <updated>2020-01-06T00:00:00Z</updated>
+  <summary>I have been wondering for a long time why cryptocurrencies in general and Bitcoin especially became so, for lack of a better word, toxic.</summary>
 </entry>
 </feed>
