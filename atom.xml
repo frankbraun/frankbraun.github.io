@@ -2,8 +2,8 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
 <title>Frank Braun</title>
 <id>https://frankbraun.org/atom.xml</id>
-<link rel="alternate" type="text/html" href="/">
-<updated>2025-07-26T09:44:26Z</updated>
+<link rel="alternate" type="text/html" href="/"/>
+<updated>2025-07-26T09:53:30Z</updated>
 <entry>
   <title>Keystone hardware wallet test with shielded Zcash</title>
   <id>https://frankbraun.org/keystone</id>
