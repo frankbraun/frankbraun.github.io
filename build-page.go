@@ -51,6 +51,7 @@ const atomHeader = `<?xml version="1.0" encoding="UTF-8"?>
 <author>
   <name>Frank Braun</name>
 </author>
+<icon>https://frankbraun.org/favicon-32x32.png</icon>
 <link rel="self" type="application/atom+xml" href="https://frankbraun.org/atom.xml"/>
 <link rel="alternate" type="text/html" href="/"/>
 `
