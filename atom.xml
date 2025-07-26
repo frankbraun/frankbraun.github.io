@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
 <title>Frank Braun</title>
+<author>Frank Braun</author>
 <id>https://frankbraun.org/atom.xml</id>
 <link rel="alternate" type="text/html" href="/"/>
-<updated>2025-07-26T09:55:57Z</updated>
+<updated>2025-07-26T09:58:24Z</updated>
 <entry>
   <title>Keystone hardware wallet test with shielded Zcash</title>
-  <author>Frank Braun</author>
   <id>https://frankbraun.org/keystone</id>
   <link rel="alternate" type="text/html" href="https://frankbraun.org/keystone"/>
   <updated>2025-07-23T00:00:00Z</updated>
@@ -14,7 +14,6 @@
 </entry>
 <entry>
   <title>My Zcash investment thesis</title>
-  <author>Frank Braun</author>
   <id>https://frankbraun.org/zecbag</id>
   <link rel="alternate" type="text/html" href="https://frankbraun.org/zecbag"/>
   <updated>2025-07-22T00:00:00Z</updated>
@@ -22,7 +21,6 @@
 </entry>
 <entry>
   <title>Why I changed my mind on t-addresses in Zcash</title>
-  <author>Frank Braun</author>
   <id>https://frankbraun.org/t-addr</id>
   <link rel="alternate" type="text/html" href="https://frankbraun.org/t-addr"/>
   <updated>2025-07-11T00:00:00Z</updated>
@@ -30,7 +28,6 @@
 </entry>
 <entry>
   <title>Cryptocurrencies as Cyberstatism</title>
-  <author>Frank Braun</author>
   <id>https://frankbraun.org/essay/cryptocurrencies-as-cyberstatism</id>
   <link rel="alternate" type="text/html" href="https://frankbraun.org/essay/cryptocurrencies-as-cyberstatism"/>
   <updated>2020-01-06T00:00:00Z</updated>
