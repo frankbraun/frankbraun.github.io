@@ -35,7 +35,7 @@ And with the rapid improvements of AI technology it's best to assume that **any 
 
 As Zooko explained in an [interesting thread on X](https://x.com/zooko/status/1935893105045389353), the best a perfectly private SoV can do is to **not** leak any information (my wording). Moving money in and out of it will **always** leak information.
 
-![[privacy-at-rest 1.svg]]
+![Privacy at rest infographic](/asciiart/privacy-at-rest.svg)
 
 Sending funds *into* a perfectly private SoV will leak the time and value of the transaction to the public. Sending fund *out of* perfectly private SoV will also leak the time and value of the transaction to the public.
 
