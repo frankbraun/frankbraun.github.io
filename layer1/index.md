@@ -136,7 +136,8 @@ While the specifics are murky, it's pretty clear that Lightning nodes could be c
 
 Cashu clearly is custodial and Calle is well served to stay pseudonymous. If a single mint would get significant volume it is very clear that the MSB definition would be applied **and enforced**, similar to more traditional mixers.
 
-[Fedi](https://www.fedi.xyz), the company building products on top of Fedimint, the protocol, is branded around *supporting communities*. While I know [EricSirion](https://x.com/ericsirion), the main developer behind Fedimint, I have never spoken with him or other people from Fedi about this specific issue and I can only speculate that they are well aware of the compliance challenges revolving around operating a mint federation, which is why a branding and Go-to-Market strategy focused on communities running federations makes total sense to me. I certainly wouldn't want to run a company that runs federated ecash mints itself.
+[Fedi](https://www.fedi.xyz), the company building products on top of Fedimint,
+the protocol, is branded around *supporting communities*. While I know [elsirion](https://x.com/ericsirion), the main developer behind Fedimint, I have never spoken with him or other people from Fedi about this specific issue and I can only speculate that they are well aware of the compliance challenges revolving around operating a mint federation, which is why a branding and Go-to-Market strategy focused on communities running federations makes total sense to me. I certainly wouldn't want to run a company that runs federated ecash mints itself.
 
 All these examples show that having privacy solutions at higher layers not only poses problems to the necessity for value at rest, but always comes with *significant compliance risks*, where **people regularly go to jail**.
 
