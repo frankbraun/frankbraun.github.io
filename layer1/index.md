@@ -45,7 +45,7 @@ The only way to separate incoming and outgoing transactions is to separate them 
 
 And the only way to do that is to use the perfectly private SoV actually as a store of value — a *savings account* — where the typical incoming and outgoing transaction is *significantly smaller* than the total amount of money saved. And an incoming transaction doesn't cause an outgoing transaction and vice versa (that is, there is no time correlation between incoming and outgoing transactions).
 
-That's also the main argument in [my Zcash investment thesis](/zecbac) why value should accrue to privacy coins, if (and only if) the market demands more monetary privacy **and** understands this dynamic, but that's not the topic of this post.
+That's also the main argument in [my Zcash investment thesis](/zecbag) why value should accrue to privacy coins, if (and only if) the market demands more monetary privacy **and** understands this dynamic, but that's not the topic of this post.
 
 Saving is not only necessary for capital accumulation, it's also a necessity for monetary privacy (unless you stay strictly within the perfectly private SoV).
 
