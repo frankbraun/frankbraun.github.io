@@ -8,7 +8,14 @@
 <icon>https://frankbraun.org/favicon-32x32.png</icon>
 <link rel="self" type="application/atom+xml" href="https://frankbraun.org/atom.xml"/>
 <link rel="alternate" type="text/html" href="/"/>
-<updated>2025-07-27T02:46:16Z</updated>
+<updated>2025-07-28T19:49:00Z</updated>
+<entry>
+  <title>Privacy needs to be baked into L1</title>
+  <id>https://frankbraun.org/layer1</id>
+  <link rel="alternate" type="text/html" href="https://frankbraun.org/layer1"/>
+  <updated>2025-07-28T00:00:00Z</updated>
+  <summary>Privacy is the absence of information leakage and that implies it comes from value at rest, not value in motion. And privacy at rest can only be ga...</summary>
+</entry>
 <entry>
   <title>Keystone hardware wallet test with shielded Zcash</title>
   <id>https://frankbraun.org/keystone</id>
