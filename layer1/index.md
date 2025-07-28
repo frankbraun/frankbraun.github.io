@@ -170,7 +170,7 @@ In order to succeed with the project of *separation of money and state* we need 
 
 **There will be no third chance, it's now or never.**
 
-So let's accept the reality of the situation, get over our cognitive dissonance and actually built on top of Zcash and [use it](/keystone) as a perfectly private SoV and MoE.
+So let's accept the reality of the situation, get over our cognitive dissonance, and actually built on top of Zcash and [use it](/keystone) as a perfectly private SoV and MoE.
 
 Bitcoin will continue to appreciate, but privacy at scale requires a more radical approach.
 
