@@ -147,7 +147,7 @@ It's all fun and games zapping each other on Nostr or paying toy amounts with ec
 
 A phrase often thrown around in Bitcoin circles is the goal of *separating money and state*. While I applaud that goal I don't think this goal can be achieved without *privacy at scale*: Are we really going to separate money and state with the state being able to watch every transaction?
 
-The state has the monopoly of violence and the ability to print money out of thin air is an even better funding method for the state than taxing it's citizens, because debasement via money printing is a lot less obvious, and therefore less likely to face opposition, than direct taxation.
+The state has the monopoly of violence and the ability to print money out of thin air is an even better funding method for the state than taxing its citizens, because debasement via money printing is a lot less obvious, and therefore less likely to face opposition, than direct taxation.
 
 Bitcoin currently seems to be in the end stages of institutional adoption and I consider it very unlikely we will see any major privacy upgrades on L1, we can be lucky if we get the necessary quantum upgrades in time, given Bitcoin's ossification.
 
