@@ -118,7 +118,7 @@ I was one of the authors of the [Scrit whitepaper](https://github.com/scritcash/
 "Fedimint is a federated custody protocol that complements the Bitcoin monetary protocol and Lightning payments protocol to provide a complete solution to holding, using, and securing Bitcoin at global scale."  
 — [Obi Nwosu, Co-founder and CEO of Fedi Inc.](https://www.fedi.xyz/blog/fedi-raises-us-4-2-million-in-seed-financing)
 
-While I still think that the various ecash designs, like Cashu and Fedi, hold great potential for fast, cheap, and private payments I now have sincere doubts about their ability to deliver *privacy at scale*, mainly due to the incompatibility between custody and value at rest: Their custodial nature (federated in the case of Fedi) requires the user to monitor them continuously and move funds to different mints, if necessary, which is in conflict with the requirement that privacy comes from value at rest.
+While I still think that the various ecash designs, like Cashu and Fedimint, hold great potential for fast, cheap, and private payments I now have sincere doubts about their ability to deliver *privacy at scale*, mainly due to the incompatibility between custody and value at rest: Their custodial nature (federated in the case of Fedimint) requires the user to monitor them continuously and move funds to different mints, if necessary, which is in conflict with the requirement that privacy comes from value at rest.
 
 ## The problem of compliance
 
