@@ -128,7 +128,7 @@ In April 2024 zkSNACKs Ltd, the company behind Wasabi Wallet, announced that U.S
 
 In April 2024, U.S. authorities seized Samourai’s servers and domains and arrested co-founders Keonne Rodriguez and William Lonergan Hill, charging them with conspiracy to commit money laundering and operating an unlicensed money transmitting business (source: [Bitcoin Magazine](https://bitcoinmagazine.com/legal/freesamourai)). They are still awaiting trial, which is set to begin in November 2025.
 
-And it continues with Tornado Cash which was put on the U.S. Treasury’s OFAC black list in August 2023, alleging it facilitated laundering of more than $7B. The protocol’s domain and GitHub repo were taken down, and multiple developers were arrested in the U.S. and Europe. One of the developers, Roman Storm, is currently dragged very publicly through U.S. courts (source: [Wikipedia](https://en.wikipedia.org/wiki/Tornado_Cash)).
+And it continues with Tornado Cash which was put on the U.S. Treasury’s OFAC black list in August 2023, alleging it facilitated laundering of more than $7B.  The protocol’s domain and GitHub repo were taken down, and multiple developers were arrested in the U.S. and Europe. One of the developers, [Roman Storm](https://freeromanstorm.com/), is currently dragged very publicly through U.S. courts (source: [Wikipedia](https://en.wikipedia.org/wiki/Tornado_Cash)).
 
 There are more examples of mixers, but I think it should be clear by now that mixers are neither advisable for users, due to the lack of privacy at rest, nor for operators, due to "compliance challenges", no matter how decentralized the design appears — **even if there is no operator!**
 
