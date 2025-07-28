@@ -75,7 +75,7 @@ A great perspective on this (thanks to Nate Wilcox) is to zoom out to the scope 
 
 The more successful these technologies are, the more people will use them to cross boundaries — technology, platform, product, social group, etc. That's a lot of the value of money! Boundary crossing. And if people are doing that, then details inside the technology, like optional transparent addresses vs. only shielded pools, are irrelevant. But "privacy comes from value at rest" remains relevant and becomes even more relevant.
 
-Let's now look at the fundamental issues why privacy cannot be layered on top of L1 and then look at concrete, well known, examples where these issues can be witnessed in the wild.
+Let's now look at the fundamental issues why privacy cannot be layered on top of L1 and look at concrete, well known, examples where these issues can be witnessed in the wild.
 
 ## The problem of fungibility
 
