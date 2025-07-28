@@ -163,7 +163,7 @@ From the three cryptocurrencies mentioned in the beginning that have privacy bak
 
 To me going down the Zcash rabbit hole definitely feels like Bitcoin early days again.
 
-I gave [a talk](https://frankbraun.org/bitcoin-in-the-counter-economy.pdf) at the first Bitcoin conference in London in 2012 about the dangers of Bitcoin being captured by states and banks. Now most of the technical issues in Bitcoin regarding privacy still persist and it's becoming completely institutionalized. Number will go up, sure, but it's not going to give us the freedoms we had hoped for, and it doesn't seem to give us [peer-to-peer electronic cash](https://bitcoin.org/bitcoin.pdf).
+I gave [a talk](/bitcoin-in-the-counter-economy.pdf) at the first Bitcoin conference in London in 2012 about the dangers of Bitcoin being captured by states and banks. Now most of the technical issues in Bitcoin regarding privacy still persist and it's becoming completely institutionalized. Number will go up, sure, but it's not going to give us the freedoms we had hoped for, and it doesn't seem to give us [peer-to-peer electronic cash](https://bitcoin.org/bitcoin.pdf).
 
 In order to succeed with the project of *separation of money and state* we need *privacy at scale* and that can only be achieved by baking privacy it into L1. And Zcash already did that with the necessary properties of being a perfectly private SoV — it's the best bet we have.
 
