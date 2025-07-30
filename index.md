@@ -13,6 +13,7 @@ See [my "now" page](/now).
 
 ## Posts
 
+- [What if programming is art?](/art) (2025-07-30)
 - [Privacy needs to be baked into L1](/layer1) (2025-07-28)
 - [Keystone hardware wallet test with shielded Zcash](/keystone) (2025-07-23)
 - [My Zcash investment thesis](/zecbag) (2025-07-22)
