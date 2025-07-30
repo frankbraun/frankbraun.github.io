@@ -5,19 +5,13 @@ If you like my work, please consider making a donation.
 If your favorite cryptocurrency is not listed **and** you want to make a
 donation, please [contact me](/#contact).
 
-Listing in alphabetical order.
+Listing in reverse alphabetical order.
 
-## Bitcoin (BTC)
+## Zcash (ZEC)
 
-`bc1qhyrvhzml4a9jt6v6cysmrj5ympuzu06j6w5f6x`
+`u1gj0fgsp3hxj0z8z6jjtqqygk0pxdh06dkga8kheeywpqxsgy965usv67wkj93gmw3hgzcdxse8r0x98v3x5c4laxmk2exlc54eeg9dp8ru2ppxy969gnah3c79tgjqxhsjuke9qcxdnjkqrpplswef4h9we4p24ktpvskngmgqh9qnyj`
 
-![QR code](/img/bitcoin.png)
-
-## Lightning (LN)
-
-`ultracougar5@primal.net`
-
-![QR code](/img/lightning.png)
+![QR code](/img/zcash.png)
 
 ## Monero (XMR)
 
@@ -25,8 +19,14 @@ Listing in alphabetical order.
 
 ![QR code](/img/monero.png)
 
-## Zcash (ZEC)
+## Lightning (LN)
 
-`u1gj0fgsp3hxj0z8z6jjtqqygk0pxdh06dkga8kheeywpqxsgy965usv67wkj93gmw3hgzcdxse8r0x98v3x5c4laxmk2exlc54eeg9dp8ru2ppxy969gnah3c79tgjqxhsjuke9qcxdnjkqrpplswef4h9we4p24ktpvskngmgqh9qnyj`
+`ultracougar5@primal.net`
 
-![QR code](/img/zcash.png)
+![QR code](/img/lightning.png)
+
+## Bitcoin (BTC)
+
+`bc1qhyrvhzml4a9jt6v6cysmrj5ympuzu06j6w5f6x`
+
+![QR code](/img/bitcoin.png)
