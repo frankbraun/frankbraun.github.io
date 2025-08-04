@@ -29,5 +29,5 @@ See [my "now" page](/now).
 
 ## Subscribe
 
-- [Atom feed](https://frankbraun.org/atom.xml)
-- [Signal announcement group](https://signal.group/#CjQKIDK4DP1OeCu5j_MlogrxOxJ3V4ozxCjwKCodEJFwAZ47EhAzE8BBfTf-drGdzZWGAB1Z)
+- Atom: [feed](https://frankbraun.org/atom.xml)
+- Signal: [announcement group](https://signal.group/#CjQKIDK4DP1OeCu5j_MlogrxOxJ3V4ozxCjwKCodEJFwAZ47EhAzE8BBfTf-drGdzZWGAB1Z)
