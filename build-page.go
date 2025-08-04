@@ -130,8 +130,8 @@ func buildPage() error {
 			return err
 		}
 		if !d.IsDir() {
-			// only consider .md files that are not README.md
-			if path != "README.md" && strings.HasSuffix(path, ".md") {
+			// only consider .md files that are not README.md or CLAUDE.md
+			if path != "README.md" && path != "CLAUDE.md" && strings.HasSuffix(path, ".md") {
 				// read .md file in
 				in, err := os.ReadFile(path)
 				if err != nil {
