@@ -25,6 +25,12 @@ Listing in reverse alphabetical order.
 
 ![QR code](/img/lightning.png)
 
+## Litecoin (LTC)
+
+`ltcmweb1qqg2qcm5uakskn9vs9m3uuzy09e5rzaa4ye9f3d098hkkns5nwvyxuq3z45wz6z0l96f6wxr9pg7h79ec8dgqs05cmgykuw642067fvsxgvsuw3k8`
+
+![QR code](/img/litecoin.png)
+
 ## Bitcoin (BTC)
 
 `bc1qhyrvhzml4a9jt6v6cysmrj5ympuzu06j6w5f6x`
