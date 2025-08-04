@@ -1,3 +1,7 @@
+fn build_page() {
+
+}
+
 fn main() {
-    println!("Hello, world!");
+    build_page();
 }
