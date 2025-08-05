@@ -45,13 +45,13 @@ The only way to separate incoming and outgoing transactions is to separate them 
 
 And the only way to do that is to use the perfectly private SoV actually as a store of value — a *savings account* — where the typical incoming and outgoing transaction is *significantly smaller* than the total amount of money saved. And an incoming transaction doesn't cause an outgoing transaction and vice versa (that is, there is no time correlation between incoming and outgoing transactions).
 
-That's also the main argument in [my Zcash investment thesis](/zecbag) why value should accrue to privacy coins, if (and only if) the market demands more monetary privacy **and** understands this dynamic, but that's not the topic of this post.
+That's also the main argument in [my Zcash investment thesis](/zecbag) why value should accrue to privacy coins, if (and only if) the market demands more financial privacy **and** understands this dynamic, but that's not the topic of this post.
 
-Saving is not only necessary for capital accumulation, it's also a necessity for monetary privacy (unless you stay strictly within the perfectly private SoV).
+Saving is not only necessary for capital accumulation, it's also a necessity for financial privacy (unless you stay strictly within the perfectly private SoV).
 
-Only the wealthy can afford to use non private payment systems with a certain assurance of privacy (as described above). If you don't have the necessary capital for a decently sized "private savings account" you **have to strictly transact within the perfectly private SoV** and never leave it in order to have monetary privacy.
+Only the wealthy can afford to use non private payment systems with a certain assurance of privacy (as described above). If you don't have the necessary capital for a decently sized "private savings account" you **have to strictly transact within the perfectly private SoV** and never leave it in order to have financial privacy.
 
-That means, if you want to spread monetary privacy to everybody, the best way to do that is to onboard wealthy people with the use case of private SoV and not yet wealthy people with the use case of medium of exchange (MoE) in a **circular economy**.
+That means, if you want to spread financial privacy to everybody, the best way to do that is to onboard wealthy people with the use case of private SoV and not yet wealthy people with the use case of medium of exchange (MoE) in a **circular economy**.
 
 ## Privacy needs to be part of the base layer
 
