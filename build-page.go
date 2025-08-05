@@ -38,6 +38,7 @@ const closeHeader = `<meta name="viewport" content="width=device-width, initial-
 `
 
 const donation = `<p>(<em>If you like my work, please consider <a href="/donate">making a donation</a>.</em>)</p>`
+const donateOrSubscribe = `<p>(<em>If you like my work, please consider <a href="/donate">making a donation</a> or <a href="/#subscribe">subscribing</a>.</em>)</p>`
 
 const footer = `</main>
 </body>
@@ -174,8 +175,14 @@ func buildPage() error {
 					return err
 				}
 				if path != "donate/index.md" {
-					if _, err := fp.WriteString(donation); err != nil {
-						return err
+					if path == "index.md" {
+						if _, err := fp.WriteString(donation); err != nil {
+							return err
+						}
+					} else {
+						if _, err := fp.WriteString(donateOrSubscribe); err != nil {
+							return err
+						}
 					}
 				}
 				if _, err := fp.WriteString(footer); err != nil {
