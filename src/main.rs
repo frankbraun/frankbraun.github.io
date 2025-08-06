@@ -1,3 +1,4 @@
+use comrak::{markdown_to_html, Options};
 use std::fs;
 use std::io;
 
@@ -51,7 +52,9 @@ const ATOM_FOOTER: &str = r#"</feed>
 
 fn build_page(filename: &str) -> Result<(), io::Error> {
     let input = fs::read_to_string(filename)?;
-    let out = markdown::to_html(&input);
+    let mut options = Options::default();
+    options.extension.header_ids = Some(String::new());
+    let out = markdown_to_html(&input, &options);
     let output = filename.replace(".md", ".html");
     let mut s = String::from(DOCTYPE);
     s.push_str(TWITTER_CARD);
