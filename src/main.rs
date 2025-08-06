@@ -57,6 +57,6 @@ fn build_page() -> Result<(), std::io::Error> {
 
 fn main() {
     if let Err(e) = build_page() {
-        eprintln!("Error: {e}");
+        eprintln!("error: {e}");
     }
 }
