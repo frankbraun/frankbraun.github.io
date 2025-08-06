@@ -37,8 +37,10 @@ const closeHeader = `<meta name="viewport" content="width=device-width, initial-
 <main>
 `
 
-const donation = `<p>(<em>If you like my work, please consider <a href="/donate">making a donation</a>.</em>)</p>`
-const donateOrSubscribe = `<p>(<em>If you like my work, please consider <a href="/donate">making a donation</a> or <a href="/#subscribe">subscribing</a>.</em>)</p>`
+const donation = `<p>(<em>If you like my work, please consider <a href="/donate">making a donation</a>.</em>)</p>
+`
+const donateOrSubscribe = `<p>(<em>If you like my work, please consider <a href="/donate">making a donation</a> or <a href="/#subscribe">subscribing</a>.</em>)</p>
+`
 
 const footer = `</main>
 </body>

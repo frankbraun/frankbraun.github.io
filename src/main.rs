@@ -1,4 +1,5 @@
 use std::fs;
+use std::io;
 
 const DOCTYPE: &str = r#"<!doctype html>
 <html lang="en">
@@ -6,7 +7,6 @@ const DOCTYPE: &str = r#"<!doctype html>
 <meta charset="utf-8">
 "#;
 
-/*
 const TWITTER_CARD: &str = r#"<meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@thefrankbraun">
 <meta name="twitter:creator" content="@thefrankbraun">
@@ -24,13 +24,15 @@ const CLOSE_HEADER: &str = r#"<meta name="viewport" content="width=device-width,
 <main>
 "#;
 
-const DONATION: &str = r#"<p>(<em>If you like my work, please consider <a href="/donate">making a donation</a>.</em>)</p>"#;
+const DONATION: &str = r#"<p>(<em>If you like my work, please consider <a href="/donate">making a donation</a>.</em>)</p>
+"#;
 
 const FOOTER: &str = r#"</main>
 </body>
 </html>
 "#;
 
+/*
 const ATOM_HEADER: &str = r#"<?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
 <title>Frank Braun</title>
@@ -47,16 +49,26 @@ const ATOM_FOOTER: &str = r#"</feed>
 "#;
 */
 
-fn build_page() -> Result<(), std::io::Error> {
-    let input = fs::read_to_string("index.md")?;
+fn build_page(filename: &str) -> Result<(), io::Error> {
+    let input = fs::read_to_string(filename)?;
     let out = markdown::to_html(&input);
-    print!("{DOCTYPE}");
-    print!("{out}");
+    let output = filename.replace(".md", ".html");
+    let mut s = String::from(DOCTYPE);
+    s.push_str(TWITTER_CARD);
+    s.push_str(CLOSE_HEADER);
+    s.push_str(&out);
+    s.push_str(DONATION);
+    s.push_str(FOOTER);
+    fs::write(output, out)?;
     Ok(())
 }
 
+fn build_pages() -> Result<(), std::io::Error> {
+    build_page("index.md")
+}
+
 fn main() {
-    if let Err(e) = build_page() {
-        eprintln!("error: {e}");
+    if let Err(e) = build_pages() {
+        eprintln!("error: {e:?}");
     }
 }
