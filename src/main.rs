@@ -59,7 +59,7 @@ fn build_page(filename: &str) -> Result<(), io::Error> {
     s.push_str(&out);
     s.push_str(DONATION);
     s.push_str(FOOTER);
-    fs::write(output, out)?;
+    fs::write(output, s)?;
     Ok(())
 }
 
