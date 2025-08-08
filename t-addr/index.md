@@ -2,8 +2,7 @@
 
 *by [Frank Braun](/), 2025-07-11*
 
-In Zcash there are two kind of addresses: transparent addresses (or t-addresses)
-and shielded addresses (or z-addresses).
+In Zcash there are two kind of addresses: transparent addresses (or t-addresses) and shielded addresses (or z-addresses).
 
 Transparent addresses work very similar to addresses in Bitcoin. Shielded
 addresses employ zero-knowledge proofs in order to hide the sender, recipient,
