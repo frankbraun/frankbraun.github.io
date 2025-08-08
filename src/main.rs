@@ -29,6 +29,9 @@ const CLOSE_HEADER: &str = r#"<meta name="viewport" content="width=device-width,
 const DONATION: &str = r#"<p>(<em>If you like my work, please consider <a href="/donate">making a donation</a>.</em>)</p>
 "#;
 
+const DONATION_OR_SUBSCRIBE: &str = r#"<p>(<em>If you like my work, please consider <a href="/donate">making a donation</a> or <a href="/#subscribe">subscribing</a>.</em>)</p>
+"#;
+
 const FOOTER: &str = r#"</main>
 </body>
 </html>
@@ -121,7 +124,13 @@ fn build_page(filename: &str) -> Result<()> {
     s.push_str(&card);
     s.push_str(CLOSE_HEADER);
     s.push_str(&out);
-    s.push_str(DONATION);
+    if filename != "donate/index.md" {
+        if filename == "index.md" {
+            s.push_str(DONATION);
+        } else {
+            s.push_str(DONATION_OR_SUBSCRIBE);
+        }
+    }
     s.push_str(FOOTER);
     fs::write(output, s)?;
     Ok(())
