@@ -61,22 +61,46 @@ fn read_first_line(filename: &str) -> Result<String> {
     Ok(line.trim_start_matches("# ").to_string())
 }
 
-fn get_card(_filename: &str, _title: &str) -> Result<String> {
-    let s = String::from(TWITTER_CARD);
-
-/*
-        desc, err := getDescription(path)
-    if err != nil {
-        return err
+fn truncate_string(s: &str, max_length: usize) -> String {
+    if s.chars().count() <= max_length - 3 {
+        return s.to_string();
     }
-    if _, err := fp.WriteString(twitterCard); err != nil {
-        return err
-    }
-    fmt.Fprintf(fp, "<meta property=\"og:title\" content=\"%s\">\n", title)
-    fmt.Fprintf(fp, "<meta property=\"og:description\" content=\"%s\">\n", desc)
-    fmt.Fprintf(fp, "<meta property=\"og:image\" content=\"https://frankbraun.org/img/frank-braun.png\">\n")
-    */
+    let mut t: String = s.chars().take(max_length - 3).collect();
+    t.push_str("...");
+    t
+}
 
+fn get_description(filename: &str) -> Result<String> {
+    let fp = File::open(filename)?;
+    let mut lines = BufReader::new(fp).lines();
+    loop {
+        let line = match lines.next() {
+            Some(res) => res?,
+            None => return Err(Error::new(ErrorKind::UnexpectedEof, "file is empty")),
+        };
+        if line.starts_with("# ")
+            || line.is_empty()
+            || line.starts_with("*by")
+            || line.starts_with("**")
+            || line.starts_with("## ")
+            || line.starts_with("(")
+        {
+            continue;
+        }
+        return Ok(truncate_string(&line, 150));
+    }
+}
+
+fn get_card(filename: &str, title: &str) -> Result<String> {
+    let mut s = String::from(TWITTER_CARD);
+    let desc = get_description(filename)?;
+    writeln!(s, "<meta property=\"og:title\" content=\"{title}\">").unwrap();
+    writeln!(s, "<meta property=\"og:description\" content=\"{desc}\">").unwrap();
+    writeln!(
+        s,
+        "<meta property=\"og:image\" content=\"https://frankbraun.org/img/frank-braun.png\">"
+    )
+    .unwrap();
     Ok(s)
 }
 
@@ -88,14 +112,13 @@ fn build_page(filename: &str) -> Result<()> {
     let output = filename.replace(".md", ".html");
     let title = read_first_line(filename)?;
     let mut s = String::from(DOCTYPE);
-    write!(s, "<title> {title}")?;
+    write!(s, "<title>{title}").unwrap();
     if filename != "index.md" {
         s.push_str(" | Frank Braun");
-
     }
+    s.push_str("</title>\n");
     let card = get_card(filename, &title)?;
     s.push_str(&card);
-    s.push_str("</title>\n");
     s.push_str(CLOSE_HEADER);
     s.push_str(&out);
     s.push_str(DONATION);
