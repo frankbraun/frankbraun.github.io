@@ -27,8 +27,8 @@ I used to utter the same reasoning, but now believe it to be wrong on both count
 
 ## A different perspective
 
-"A change in perspective is worth 80 IQ points."  
-— Alan Kay
+> "A change in perspective is worth 80 IQ points."\
+> — Alan Kay
 
 I think the argument is best understood by looking at the situation from a different perspective and not conflating theory and practice.
 
