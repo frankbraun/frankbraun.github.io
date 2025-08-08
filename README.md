@@ -1,4 +1,3 @@
-Personal website generator
---------------------------
+## Personal website generator
 
 For https://frankbraun.org
