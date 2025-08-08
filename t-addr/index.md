@@ -20,8 +20,10 @@ That gives us four transaction types:
 
 - t -> t: *transparent* transactions similar to transactions in Bitcoin.
 - s -> s: *shielded* transactions, totally opaque within a shielded pool.
-- t -> s: a *shielding* transaction, moving coins from the transparent ledger into a shielded pool.
-- s -> t: an *unshielding* transaction, moving coins from the shielded pool to the transparent ledger.
+- t -> s: a *shielding* transaction, moving coins from the transparent ledger
+          into a shielded pool.
+- s -> t: an *unshielding* transaction, moving coins from the shielded pool to
+          the transparent ledger.
 
 A common critique of Zcash is that it's not "private by default" (that is, it
 doesn't just have shielded transaction), in contrast to Monero, which is
