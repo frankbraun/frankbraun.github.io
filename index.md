@@ -23,6 +23,9 @@ See [my "now" page](/now).
 ## Contact
 
 - Signal: [frankbraun.21](https://signal.me/#eu/9EXnQZEziD_sws3g4um2r9S8znM2ZWzIEPDs74hNo3FWVaCXDvhAx7wv4d5NB9Bn)
+
+## Follow
+
 - Nostr: `npub1vmu8mq9fr96c5e97p5ku3ga9507sek7htl9utpddd6t99cwqjersz5hxee`
 - X: [@thefrankbraun](https://x.com/thefrankbraun)
 - GitHub: [frankbraun](https://github.com/frankbraun)
