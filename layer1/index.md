@@ -14,8 +14,8 @@ If some information is only known to a restricted group of people, then that inf
 In the digital realm nothing can be taken back. If I send you a digital picture, I still have it.
 I also can never control with certainty where this picture will end up afterwards.
 
-"The only true secret is the one you take to the grave."  
-— Anonymous
+> "The only true secret is the one you take to the grave."\
+> — Anonymous
 
 If you want to keep a secret, don't share it with anybody. If you share a secret with only one person and it becomes publicly known afterwards, you know who broke secrecy, but you cannot make it a secret again. If you share a secret with only two people and it becomes publicly known afterwards, you cannot even know anymore with certainty who broke secrecy, and you certainly cannot take it back. If you try to censor leaked information from the internet you will most likely become a victim of the [Streisand effect](https://en.wikipedia.org/wiki/Streisand_effect).
 
@@ -115,8 +115,10 @@ Let's now consider ecash systems, starting with the single mint design of [Cashu
 
 I was one of the authors of the [Scrit whitepaper](https://github.com/scritcash/scrit-whitepaper/blob/master/scrit-whitepaper.pdf), a federated design that inspired [Fedimint](https://fedimint.org), and while the design spreads custody over multiple mints, it's still federated custody. 
 
-"Fedimint is a federated custody protocol that complements the Bitcoin monetary protocol and Lightning payments protocol to provide a complete solution to holding, using, and securing Bitcoin at global scale."  
-— [Obi Nwosu, Co-founder and CEO of Fedi Inc.](https://www.fedi.xyz/blog/fedi-raises-us-4-2-million-in-seed-financing)
+> "Fedimint is a federated custody protocol that complements the Bitcoin
+> monetary protocol and Lightning payments protocol to provide a complete
+> solution to holding, using, and securing Bitcoin at global scale."\
+> — [Obi Nwosu, Co-founder and CEO of Fedi Inc.](https://www.fedi.xyz/blog/fedi-raises-us-4-2-million-in-seed-financing)
 
 While I still think that the various ecash designs, like Cashu and Fedimint, hold great potential for fast, cheap, and private payments I now have sincere doubts about their ability to deliver *privacy at scale*, mainly due to the incompatibility between custody and value at rest: Their custodial nature (federated in the case of Fedimint) requires the user to monitor them continuously and move funds to different mints, if necessary, which is in conflict with the requirement that privacy comes from value at rest.
 

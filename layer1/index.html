@@ -29,8 +29,10 @@ If some information is public then anybody can potentially access that that info
 If some information is only known to a restricted group of people, then that information can still potentially be accessed by people outside of that group.</p>
 <p>In the digital realm nothing can be taken back. If I send you a digital picture, I still have it.
 I also can never control with certainty where this picture will end up afterwards.</p>
+<blockquote>
 <p>&quot;The only true secret is the one you take to the grave.&quot;<br>
 — Anonymous</p>
+</blockquote>
 <p>If you want to keep a secret, don't share it with anybody. If you share a secret with only one person and it becomes publicly known afterwards, you know who broke secrecy, but you cannot make it a secret again. If you share a secret with only two people and it becomes publicly known afterwards, you cannot even know anymore with certainty who broke secrecy, and you certainly cannot take it back. If you try to censor leaked information from the internet you will most likely become a victim of the <a href="https://en.wikipedia.org/wiki/Streisand_effect">Streisand effect</a>.</p>
 <p>From a <a href="https://en.wikipedia.org/wiki/Threat_model">threat model</a> perspective, it's best to assume that any information that is shared with anybody will become public knowledge.</p>
 <p>Therefore, the only way to &quot;gain&quot; privacy is by not sharing information in the first place.</p>
@@ -80,8 +82,12 @@ I also can never control with certainty where this picture will end up afterward
 <p>Let's now consider ecash systems, starting with the single mint design of <a href="https://cashu.space">Cashu</a>.</p>
 <p>&quot;<strong>Cashu is not the second layer of Bitcoin</strong> (or even the third), the pseudonymous author of the Cashu protocol Calle correctly says that the layer must support a sovereign transition to a lower layer in order to qualify for being another layer.&quot; (quoted by <a href="https://juraj.bednar.io/en/blog-en/2025/03/18/cashu-bitcoin-freebanking/">Juraj Bednar</a>)</p>
 <p>I was one of the authors of the <a href="https://github.com/scritcash/scrit-whitepaper/blob/master/scrit-whitepaper.pdf">Scrit whitepaper</a>, a federated design that inspired <a href="https://fedimint.org">Fedimint</a>, and while the design spreads custody over multiple mints, it's still federated custody.</p>
-<p>&quot;Fedimint is a federated custody protocol that complements the Bitcoin monetary protocol and Lightning payments protocol to provide a complete solution to holding, using, and securing Bitcoin at global scale.&quot;<br>
+<blockquote>
+<p>&quot;Fedimint is a federated custody protocol that complements the Bitcoin
+monetary protocol and Lightning payments protocol to provide a complete
+solution to holding, using, and securing Bitcoin at global scale.&quot;<br>
 — <a href="https://www.fedi.xyz/blog/fedi-raises-us-4-2-million-in-seed-financing">Obi Nwosu, Co-founder and CEO of Fedi Inc.</a></p>
+</blockquote>
 <p>While I still think that the various ecash designs, like Cashu and Fedimint, hold great potential for fast, cheap, and private payments I now have sincere doubts about their ability to deliver <em>privacy at scale</em>, mainly due to the incompatibility between custody and value at rest: Their custodial nature (federated in the case of Fedimint) requires the user to monitor them continuously and move funds to different mints, if necessary, which is in conflict with the requirement that privacy comes from value at rest.</p>
 <h2 id="the-problem-of-compliance">The problem of compliance</h2>
 <p>Which brings us to the final and largest issue with privacy on higher layers, the problem of compliance. Let's go through the same list of technologies and I think the picture will become pretty clear.</p>
