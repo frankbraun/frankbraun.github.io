@@ -24,9 +24,19 @@
 <p><strong>Disclaimer: I don't have any relation with the Keystone company and paid for the hardware wallet myself.</strong></p>
 <p>I finally got my hands on a Keystone 3 Pro hardware wallet in order to test it with the Zashi mobile wallet.</p>
 <p><img src="/img/keystone.jpg" alt="Keystone hardware wallet"></p>
-<p>After unboxing (nice experience, but we are not on YouTube here) I installed the Cypherpunk 2.0.4 <a href="https://keyst.one/firmware">firmware</a> via SD card, in order to get shielded ZEC support. The same firmware also supports Monero (XMR) and Bitcoin (BTC) transactions, but I haven't tested those.</p>
-<p>Creating a new 24 word seed phrase and writing it down was pretty straightforward. The mandatory verification comprises selecting the 24 words on the display in the right order which worked just fine, but I have seen better designs from a UX perspective. While the display and device has a very nice size and works well for normal operations, scrolling the word list up and down and selecting the words in order felt a bit clumsy to me.</p>
-<p>After that hurdle has been taken, connecting the Keystone to Zashi was very straightforward. After that Zashi allows you to switch between the two &quot;accounts&quot; on the upper left (test was on iOS).</p>
+<p>After unboxing (nice experience, but we are not on YouTube here) I installed the
+Cypherpunk 2.0.4 <a href="https://keyst.one/firmware">firmware</a> via SD card, in order to
+get shielded ZEC support. The same firmware also supports Monero (XMR) and
+Bitcoin (BTC) transactions, but I haven't tested those.</p>
+<p>Creating a new 24 word seed phrase and writing it down was pretty
+straightforward. The mandatory verification comprises selecting the 24 words on
+the display in the right order which worked just fine, but I have seen better
+designs from a UX perspective. While the display and device has a very nice size
+and works well for normal operations, scrolling the word list up and down and
+selecting the words in order felt a bit clumsy to me.</p>
+<p>After that hurdle has been taken, connecting the Keystone to Zashi was very
+straightforward. After that Zashi allows you to switch between the two
+&quot;accounts&quot; on the upper left (test was on iOS).</p>
 <p><img src="/img/zashi.png" alt="Zashi account switcher"></p>
 <p>Sending shielded ZEC to the Keystone is pretty straightforward. You can either
 scan the QR code on the Keystone directly or just select the Keystone wallet
@@ -40,12 +50,23 @@ prominently put on the top).</p>
 <li>Press <code>&quot;Confirm with Keystone&quot;</code>.</li>
 <li>Scan the QR code with the Keystone.</li>
 <li>Review and sign the transaction on the Keystone.</li>
-<li>Press <code>&quot;Get Signature&quot;</code> on Zashi and scan the signed transaction QR code from the Keystone.</li>
+<li>Press <code>&quot;Get Signature&quot;</code> on Zashi and scan the signed transaction QR code from
+the Keystone.</li>
 </ol>
 <p>Zashi automatically transmits the transaction and <em>done</em>.</p>
 <h2 id="open-issues">Open issues</h2>
-<p>Shamir's Secret Sharing (SLIP39) seed phrases don't seem to work with ZEC on the Keystone, see <a href="https://github.com/KeystoneHQ/keystone3-firmware/issues/1806">GitHub issue</a>. There also seems to be some incompatibility with SLIP39 phrases imported from a Trezor, see <a href="https://github.com/KeystoneHQ/keystone3-firmware/issues/1506">GitHub issue</a>. I haven't tried these two options myself, but I consider proper and compatible SLIP39 support to be very important.</p>
-<p>When entering the last number of a numerical PIN the gray dot doesn't turn orange before unlocking, see <a href="https://github.com/KeystoneHQ/keystone3-firmware/issues/1856">GithHub issue</a>. Not a big issue, but my obsessive brain doesn't like it.</p>
+<p>Shamir's Secret Sharing (SLIP39) seed phrases don't seem to work with ZEC on the
+Keystone, see
+<a href="https://github.com/KeystoneHQ/keystone3-firmware/issues/1806">GitHub issue</a>.
+There also seems to be some incompatibility with SLIP39 phrases imported from a
+Trezor, see
+<a href="https://github.com/KeystoneHQ/keystone3-firmware/issues/1506">GitHub issue</a>.
+I haven't tried these two options myself, but I consider proper and compatible
+SLIP39 support to be very important.</p>
+<p>When entering the last number of a numerical PIN the gray dot doesn't turn
+orange before unlocking, see
+<a href="https://github.com/KeystoneHQ/keystone3-firmware/issues/1856">GithHub issue</a>.
+Not a big issue, but my obsessive brain doesn't like it.</p>
 <blockquote>
 <p>&quot;When you’re a carpenter making a beautiful chest of drawers, you’re not going
 to use a piece of plywood on the back, even though it faces the wall and
@@ -55,12 +76,22 @@ aesthetic, the quality, has to be carried all the way through.&quot;<br>
 — Steve Jobs</p>
 </blockquote>
 <h2 id="conclusion">Conclusion</h2>
-<p>Having a <strong>fully airgapped</strong> <a href="https://keyst.one/shop/products/keystone-3-pro">Keystone 3 Pro</a> hardware wallet that exclusively supports <strong>shielded Zcash transactions</strong> with a very nice integration into <a href="https://electriccoin.co/zashi/">Zashi</a> <strong>feels like magic</strong>.</p>
-<p>I'm looking forward to the upcoming Ledger support for shielded Zcash and I hope that Trezor revives their efforts to add shielded Zcash support. But having such a smooth experience transferring unsigned transactions to and signed transaction from the Keystone via QR codes has a totally different feel to it than fiddling with small buttons on a Ledger Nano X or Nano S Plus.</p>
+<p>Having a <strong>fully airgapped</strong> <a href="https://keyst.one/shop/products/keystone-3-pro">Keystone 3
+Pro</a> hardware wallet that
+exclusively supports <strong>shielded Zcash transactions</strong> with a very nice
+integration into <a href="https://electriccoin.co/zashi/">Zashi</a> <strong>feels like magic</strong>.</p>
+<p>I'm looking forward to the upcoming Ledger support for shielded Zcash and I hope
+that Trezor revives their efforts to add shielded Zcash support. But having such
+a smooth experience transferring unsigned transactions to and signed transaction
+from the Keystone via QR codes has a totally different feel to it than fiddling
+with small buttons on a Ledger Nano X or Nano S Plus.</p>
 <p>And the fully airgapped setup puts it on par with Bitcoin setups using hardware
 wallets like Coinkite's Coldcard or Foundation's Passport.</p>
-<p>I think that such hardware wallet support for <em>shielded Zcash transations</em> is absolutely necessary in order to set the flywheel in motion that I describe in my <a href="/zecbag">Zcash investment thesis</a>.</p>
-<p>The cypherpunk future of unstoppable private money is here — it's just not very evenly distributed yet.</p>
+<p>I think that such hardware wallet support for <em>shielded Zcash transations</em> is
+absolutely necessary in order to set the flywheel in motion that I describe in
+my <a href="/zecbag">Zcash investment thesis</a>.</p>
+<p>The cypherpunk future of unstoppable private money is here — it's just not very
+evenly distributed yet.</p>
 <p>(<em>If you like my work, please consider <a href="/donate">making a donation</a> or <a href="/#subscribe">subscribing</a>.</em>)</p>
 </main>
 </body>
