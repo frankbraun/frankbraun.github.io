@@ -11,7 +11,8 @@ I'm deep in the rabbit hole trying to wrap my head around the Zcash ecosystem.
 ## Learning Rust
 
 After over two decades of C and over one of Go it's about time to really learn
-Rust. I attempted it before and wrote some code in it, but never to the level that it really stuck in my brain. Digesting
+Rust. I attempted it before and wrote some code in it, but never to the level
+that it really stuck in my brain. Digesting
 "[the book](https://doc.rust-lang.org/stable/book/index.html)" right now.
 
 ## Moving
