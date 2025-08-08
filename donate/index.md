@@ -3,7 +3,7 @@
 If you like my work, please consider making a donation.
 
 If your favorite cryptocurrency is not listed **and** you want to make a
-donation, please [contact me](/#contact).
+donation, please [contact me](/#contact--follow).
 
 Listing in reverse alphabetical order.
 
