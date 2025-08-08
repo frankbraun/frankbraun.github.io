@@ -1,6 +1,6 @@
-use comrak::{markdown_to_html, Options};
-use std::fs;
-use std::io;
+use comrak::{Options, markdown_to_html};
+use std::fs::{self, File};
+use std::io::{BufRead, BufReader, Error, ErrorKind, Result};
 
 const DOCTYPE: &str = r#"<!doctype html>
 <html lang="en">
@@ -50,12 +50,26 @@ const ATOM_FOOTER: &str = r#"</feed>
 "#;
 */
 
-fn build_page(filename: &str) -> Result<(), io::Error> {
+fn read_first_line(filename: &str) -> Result<String> {
+    let fp = File::open(filename)?;
+    let mut lines = BufReader::new(fp).lines();
+    let mut line = match lines.next() {
+        Some(res) => res,
+        None => return Err(Error::new(ErrorKind::UnexpectedEof, "file is empty")),
+    };
+    line.trim_start_matches("# ")
+}
+
+
+fn build_page(filename: &str) -> Result<()> {
     let input = fs::read_to_string(filename)?;
     let mut options = Options::default();
     options.extension.header_ids = Some(String::new());
     let out = markdown_to_html(&input, &options);
     let output = filename.replace(".md", ".html");
+    let title = read_first_line(filename)?;
+
+
     let mut s = String::from(DOCTYPE);
     s.push_str(TWITTER_CARD);
     s.push_str(CLOSE_HEADER);
@@ -66,7 +80,7 @@ fn build_page(filename: &str) -> Result<(), io::Error> {
     Ok(())
 }
 
-fn build_pages() -> Result<(), std::io::Error> {
+fn build_pages() -> Result<()> {
     build_page("index.md")
 }
 
