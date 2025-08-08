@@ -1,4 +1,5 @@
 use comrak::{Options, markdown_to_html};
+use std::fmt::Write;
 use std::fs::{self, File};
 use std::io::{BufRead, BufReader, Error, ErrorKind, Result};
 
@@ -53,13 +54,31 @@ const ATOM_FOOTER: &str = r#"</feed>
 fn read_first_line(filename: &str) -> Result<String> {
     let fp = File::open(filename)?;
     let mut lines = BufReader::new(fp).lines();
-    let mut line = match lines.next() {
-        Some(res) => res,
+    let line = match lines.next() {
+        Some(res) => res?,
         None => return Err(Error::new(ErrorKind::UnexpectedEof, "file is empty")),
     };
-    line.trim_start_matches("# ")
+    Ok(line.trim_start_matches("# ").to_string())
 }
 
+fn get_card(_filename: &str, _title: &str) -> Result<String> {
+    let s = String::from(TWITTER_CARD);
+
+/*
+        desc, err := getDescription(path)
+    if err != nil {
+        return err
+    }
+    if _, err := fp.WriteString(twitterCard); err != nil {
+        return err
+    }
+    fmt.Fprintf(fp, "<meta property=\"og:title\" content=\"%s\">\n", title)
+    fmt.Fprintf(fp, "<meta property=\"og:description\" content=\"%s\">\n", desc)
+    fmt.Fprintf(fp, "<meta property=\"og:image\" content=\"https://frankbraun.org/img/frank-braun.png\">\n")
+    */
+
+    Ok(s)
+}
 
 fn build_page(filename: &str) -> Result<()> {
     let input = fs::read_to_string(filename)?;
@@ -68,10 +87,15 @@ fn build_page(filename: &str) -> Result<()> {
     let out = markdown_to_html(&input, &options);
     let output = filename.replace(".md", ".html");
     let title = read_first_line(filename)?;
-
-
     let mut s = String::from(DOCTYPE);
-    s.push_str(TWITTER_CARD);
+    write!(s, "<title> {title}")?;
+    if filename != "index.md" {
+        s.push_str(" | Frank Braun");
+
+    }
+    let card = get_card(filename, &title)?;
+    s.push_str(&card);
+    s.push_str("</title>\n");
     s.push_str(CLOSE_HEADER);
     s.push_str(&out);
     s.push_str(DONATION);
