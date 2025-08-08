@@ -1,3 +1,4 @@
 *.swp
-build-page
+.DS_Store
 /target
+build-page

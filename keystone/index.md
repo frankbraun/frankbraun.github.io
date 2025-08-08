@@ -40,8 +40,12 @@ Shamir's Secret Sharing (SLIP39) seed phrases don't seem to work with ZEC on the
 
 When entering the last number of a numerical PIN the gray dot doesn't turn orange before unlocking, see [GithHub issue](https://github.com/KeystoneHQ/keystone3-firmware/issues/1856). Not a big issue, but my obsessive brain doesn't like it.
 
-"When you’re a carpenter making a beautiful chest of drawers, you’re not going to use a piece of plywood on the back, even though it faces the wall and nobody will ever see it. You’ll know it’s there, so you’re going to use a beautiful piece of wood on the back. For you to sleep well at night, the aesthetic, the quality, has to be carried all the way through."  
-— Steve Jobs
+> "When you’re a carpenter making a beautiful chest of drawers, you’re not going
+> to use a piece of plywood on the back, even though it faces the wall and
+> nobody will ever see it. You’ll know it’s there, so you’re going to use a
+> beautiful piece of wood on the back. For you to sleep well at night, the
+> aesthetic, the quality, has to be carried all the way through."\
+> — Steve Jobs
 
 ## Conclusion
 
