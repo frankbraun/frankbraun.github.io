@@ -139,6 +139,7 @@ name = "build-page"
 version = "0.1.0"
 dependencies = [
  "comrak",
+ "walkdir",
 ]
 
 [[package]]

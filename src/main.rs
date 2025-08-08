@@ -2,6 +2,7 @@ use comrak::{Options, markdown_to_html};
 use std::fmt::Write;
 use std::fs::{self, File};
 use std::io::{BufRead, BufReader, Error, ErrorKind, Result};
+use walkdir::WalkDir;
 
 const DOCTYPE: &str = r#"<!doctype html>
 <html lang="en">
@@ -137,7 +138,15 @@ fn build_page(filename: &str) -> Result<()> {
 }
 
 fn build_pages() -> Result<()> {
-    build_page("index.md")
+    for entry in WalkDir::new(".").into_iter().filter_map(|e| e.ok()) {
+        if entry.file_type().is_file() {
+            let path = entry.path().to_str().unwrap();
+            if path != "./README.md" && path != "./CLAUDE.md" && path.ends_with(".md") {
+                build_page(path)?;
+            }
+        }
+    }
+    Ok(())
 }
 
 fn main() {
