@@ -1,16 +1,27 @@
 ASCIIART_SRC:=$(wildcard asciiart/*.txt)
 ASCIIART_DST:=$(ASCIIART_SRC:%.txt=%.svg)
 
-all: $(ASCIIART_DST) build-page
-	./build-page
+all: $(ASCIIART_DST) ./target/debug/build-page
+	./target/debug/build-page
 
-build-page: build-page.go
-	go build -v $<
+atom: $(ASCIIART_DST) ./target/debug/build-page
+	./target/debug/build-page --atom
+
+./target/debug/build-page: src/main.rs
+	cargo build
 
 asciiart/%.svg: asciiart/%.txt
 	svgbob -o $@ $<
 
+.PHONY: clean cleanup check fmt
 clean:
-	rm -f build-page
+	rm -f ./target/debug/build-page
 
-.PHONY: clean
+cleanup:
+	rm -rf ./target
+
+check:
+	cargo clippy
+
+fmt:
+	cargo fmt
