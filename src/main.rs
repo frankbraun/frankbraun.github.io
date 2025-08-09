@@ -1,3 +1,4 @@
+use clap::Parser;
 use comrak::{Options, markdown_to_html};
 use std::fmt::Write;
 use std::fs::{self, File};
@@ -149,8 +150,25 @@ fn build_pages() -> Result<()> {
     Ok(())
 }
 
+fn write_feed() -> Result<()> {
+    Ok(())
+}
+
+#[derive(Parser, Debug)]
+#[command(author, version, about, long_about = None)]
+struct Args {
+    #[arg(long)]
+    atom: bool,
+}
+
 fn main() {
+    let args = Args::parse();
     if let Err(e) = build_pages() {
-        eprintln!("error: {e:?}");
+        return eprintln!("error: {e:?}");
+    }
+    if args.atom {
+        if let Err(e) = write_feed() {
+            eprintln!("error: {e:?}");
+        }
     }
 }
