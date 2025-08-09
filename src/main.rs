@@ -157,6 +157,7 @@ fn write_feed() -> Result<()> {
 #[derive(Parser, Debug)]
 #[command(author, version, about, long_about = None)]
 struct Args {
+    /// Generate atom.xml file
     #[arg(long)]
     atom: bool,
 }
