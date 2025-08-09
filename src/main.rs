@@ -1,5 +1,7 @@
+use chrono::Utc;
 use clap::Parser;
 use comrak::{Options, markdown_to_html};
+use regex::Regex;
 use std::fmt::Write;
 use std::fs::{self, File};
 use std::io::{BufRead, BufReader, Error, ErrorKind, Result};
@@ -39,7 +41,6 @@ const FOOTER: &str = r#"</main>
 </html>
 "#;
 
-/*
 const ATOM_HEADER: &str = r#"<?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
 <title>Frank Braun</title>
@@ -54,7 +55,6 @@ const ATOM_HEADER: &str = r#"<?xml version="1.0" encoding="UTF-8"?>
 
 const ATOM_FOOTER: &str = r#"</feed>
 "#;
-*/
 
 fn read_first_line(filename: &str) -> Result<String> {
     let fp = File::open(filename)?;
@@ -81,7 +81,12 @@ fn get_description(filename: &str) -> Result<String> {
     loop {
         let line = match lines.next() {
             Some(res) => res?,
-            None => return Err(Error::new(ErrorKind::UnexpectedEof, "file is empty")),
+            None => {
+                return Err(Error::new(
+                    ErrorKind::UnexpectedEof,
+                    "file has no description",
+                ));
+            }
         };
         if line.starts_with("# ")
             || line.is_empty()
@@ -150,7 +155,74 @@ fn build_pages() -> Result<()> {
     Ok(())
 }
 
+fn get_feed_entry(desc: &str) -> Result<String> {
+    let re = Regex::new(r"\[(.*?)\]\((.*?)\) \((.*?)\)").unwrap();
+    let captures = re.captures(desc).ok_or_else(|| {
+        Error::new(
+            ErrorKind::InvalidInput,
+            format!("cannot match post line: {desc}"),
+        )
+    })?;
+    let title = &captures[1];
+    let link = &captures[2];
+    let date = &captures[3];
+    let path = format!("{}/index.md", link.trim_start_matches('/'));
+    let description = get_description(&path)?;
+    let mut s = String::new();
+    writeln!(s, "<entry>").unwrap();
+    writeln!(s, "  <title>{title}</title>").unwrap();
+    writeln!(s, "  <id>https://frankbraun.org{link}</id>").unwrap();
+    writeln!(
+        s,
+        "  <link rel=\"alternate\" type=\"text/html\"href=\"https://frankbraun.org{link}\"/>"
+    )
+    .unwrap();
+    writeln!(s, "  <updated>{date}T00:00:00Z</updated>").unwrap();
+    writeln!(s, "  <summary>{description}</summary>").unwrap();
+    writeln!(s, "</entry>").unwrap();
+    Ok(s)
+}
+
+fn get_feed_entries() -> Result<String> {
+    let fp = File::open("index.md")?;
+    let mut lines = BufReader::new(fp).lines();
+    loop {
+        let line = match lines.next() {
+            Some(res) => res?,
+            None => return Err(Error::new(ErrorKind::UnexpectedEof, "file has no posts")),
+        };
+        if line.starts_with("## Posts ") {
+            break;
+        }
+    }
+    let mut s = String::new();
+    loop {
+        let line = match lines.next() {
+            Some(res) => res?,
+            None => return Err(Error::new(ErrorKind::UnexpectedEof, "file is empty")),
+        };
+        if line.is_empty() {
+            continue;
+        }
+        if line.starts_with("#") {
+            break;
+        }
+        if line.starts_with("- ") {
+            let entry = get_feed_entry(line.trim_start_matches("- "))?;
+            s.push_str(&entry);
+        }
+    }
+    Ok(s)
+}
+
 fn write_feed() -> Result<()> {
+    let mut s = String::from(ATOM_HEADER);
+    let now = Utc::now().to_rfc3339();
+    writeln!(s, "<updated>{now}</updated>").unwrap();
+    let entries = get_feed_entries()?;
+    s.push_str(&entries);
+    s.push_str(ATOM_FOOTER);
+    fs::write("atom.xml", s)?;
     Ok(())
 }
 
