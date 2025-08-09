@@ -1,4 +1,4 @@
-use chrono::Utc;
+use chrono::{SecondsFormat, Utc};
 use clap::Parser;
 use comrak::{Options, markdown_to_html};
 use regex::Regex;
@@ -174,7 +174,7 @@ fn get_feed_entry(desc: &str) -> Result<String> {
     writeln!(s, "  <id>https://frankbraun.org{link}</id>").unwrap();
     writeln!(
         s,
-        "  <link rel=\"alternate\" type=\"text/html\"href=\"https://frankbraun.org{link}\"/>"
+        "  <link rel=\"alternate\" type=\"text/html\" href=\"https://frankbraun.org{link}\"/>"
     )
     .unwrap();
     writeln!(s, "  <updated>{date}T00:00:00Z</updated>").unwrap();
@@ -191,7 +191,7 @@ fn get_feed_entries() -> Result<String> {
             Some(res) => res?,
             None => return Err(Error::new(ErrorKind::UnexpectedEof, "file has no posts")),
         };
-        if line.starts_with("## Posts ") {
+        if line.starts_with("## Posts") {
             break;
         }
     }
@@ -217,7 +217,7 @@ fn get_feed_entries() -> Result<String> {
 
 fn write_feed() -> Result<()> {
     let mut s = String::from(ATOM_HEADER);
-    let now = Utc::now().to_rfc3339();
+    let now = Utc::now().to_rfc3339_opts(SecondsFormat::Secs, true);
     writeln!(s, "<updated>{now}</updated>").unwrap();
     let entries = get_feed_entries()?;
     s.push_str(&entries);
