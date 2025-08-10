@@ -6,7 +6,7 @@ This post is not about one particular freedom technology, but about what stays c
 
 I usually define freedom technology, or *freedom tech*, as technology that is
 able to give us more personal freedom in our lifetime. And since technology is
-evolving very fast and the pace of change is likely to increase evermore it's
+evolving very fast and the pace of change is likely to increase evermore, it's
 easy to lose track of what's really going to matter in the long term.
 
 > "I very frequently get the question, 'What's going to change in the next ten
@@ -34,7 +34,7 @@ Everybody is shopping, but not everybody wants to be free.
 So while we sell goods to everybody, we cannot sell freedom to everybody.
 Everybody is buying something, but not everybody is buying freedom. Some people
 prefer other things, like safety, and are rather content with being controlled.
-If that's wise is a different discussion.
+Whether that's wise is a different discussion.
 
 > "Those who would give up essential Liberty, to purchase a little temporary
 > Safety, deserve neither Liberty nor Safety."\
@@ -55,11 +55,11 @@ customer" wants to communicate and transact in private.
 
 Or, more generally, let's assume that *free people want privacy*.
 
-> We want privacy, because there is no freedom without it.
+> We want privacy because there is no freedom without it.
 
 ## The freedom tech stack
 
-In order to have the ability to communicate and transact privately we need to
+In order to have the ability to communicate and transact privately, we need to
 build out the *freedom tech stack*.
 
 ![Freedom tech stack](/asciiart/freedom-tech-stack.svg)
@@ -72,18 +72,18 @@ Software can only ever be as secure as the endpoint, the device it is running
 on, usually a computer or a mobile phone.
 
 If you can compromise the [endpoint
-security](https://en.wikipedia.org/wiki/Endpoint_security) you can compromise
+security](https://en.wikipedia.org/wiki/Endpoint_security), you can compromise
 all software that is running on it.
 
-Therefore it is paramount that the hardware and software of our devices is
+Therefore it is paramount that the hardware and software of our devices are
 secure and *open*.
 
-I think it's vastly underrated how dangerous a mandate of using [attested
+I think it's vastly underrated how dangerous a mandate to use [attested
 applications](https://en.wikipedia.org/wiki/Trusted_Computing) for things like
 age verification would be. In order for an application to be attestable it has
 to run on an attestable device and that usually means you are running a mobile
 phone which comes from Apple or Google with *their* OS on it and the app comes
-from *their* app store. Which means you have neither control over the OS nor
+from *their* app store. This means you have neither control over the OS nor
 over the software that you are running on it anymore.
 
 > Invariant #1: We want to control our devices — the hardware itself and the
@@ -101,7 +101,7 @@ So everything that improves operating system and programming language
 correctness, including formal verification and tooling for better collaboration
 and package delivery, is indirectly freedom tech.
 
-> Invariant #2: We want our software to be open-source and correct.
+> Invariant #2: We want our software to be open source and correct.
 
 ## Anonymous messaging
 
@@ -135,8 +135,8 @@ Provable pseudonyms are *necessary* to build reputation systems.
 
 Expensive pseudonyms would help against bots.
 
-Pseudonyms allow to have an open discourse without the [chilling
-efffect](https://en.wikipedia.org/wiki/Chilling_effect).
+Pseudonyms allow us to have an open discourse without the
+[chilling effect](https://en.wikipedia.org/wiki/Chilling_effect).
 
 > Invariant #5: We want to be able to have provable  nyms — not tied to our
 > legal identity.
@@ -149,15 +149,15 @@ freedom tech stack discussed so far to function reliably and securely.
 
 You cannot build a pyramid on quicksand.
 
-> Invariant #6: We want to be able to transact in unrestricted market places — a
+> Invariant #6: We want to be able to transact in unrestricted marketplaces — a
 > free society requires free trade.
 
 ## Physical spaces
 
 As physical beings we operate in the physical world.
 
-That means in order to be truly free, floating freely in cyberspace is not going
-to be enough.
+That means that, in order to be truly free, floating freely in cyberspace is not
+going to be enough.
 
 Whoever controls your physical environment can control you.
 
@@ -165,7 +165,7 @@ Whoever controls your physical environment can control you.
 
 ## Conclusion
 
-We want privacy, because there is no freedom without it.
+We want privacy because there is no freedom without it.
 
 And in order to get privacy we are building out the *freedom tech stack*.
 
@@ -174,7 +174,7 @@ When evaluating freedom tech we can ask ourselves these questions:
 1. Does it lead to more control over our own computing devices?
 2. Does it improve software openness and correctness?
 3. Does it allow us to communicate more privately and anonymously?
-4. Does it allow us to transact more freely, money wise?
+4. Does it allow us to transact more freely, money-wise?
 5. Does it allow us to have nyms?
 6. Does it allow us to transact more freely, in an unrestricted marketplace?
 7. Does it give us more control over our physical environment?
