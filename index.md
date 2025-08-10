@@ -13,7 +13,7 @@ See [my "now" page](/now).
 
 ## Posts
 
-- [Freedom technology invariants?](/invariants) (2025-08-10)
+- [Freedom technology invariants](/invariants) (2025-08-10)
 - [What if programming is art?](/art) (2025-07-30)
 - [Privacy needs to be baked into L1](/layer1) (2025-07-28)
 - [Keystone hardware wallet test with shielded Zcash](/keystone) (2025-07-23)
