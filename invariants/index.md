@@ -1,3 +1,5 @@
+# Freedom technology invariants
+
 *by [Frank Braun](/), 2025-08-10*
 
 This post is not about one particular freedom technology, but about what stays constant if everything changes — freedom technology invariants.
