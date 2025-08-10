@@ -106,7 +106,7 @@ and package delivery, is indirectly freedom tech.
 ## Anonymous messaging
 
 The ability to communicate in private is necessary for freedom, but the secrecy
-of the communication itself is not enough.
+of the communication content itself is not enough.
 
 >"We kill people based on metadata."\
 > — Michael Hayden, former CIA & NSA director
