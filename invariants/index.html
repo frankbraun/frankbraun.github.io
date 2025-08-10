@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>*by [Frank Braun](/), 2025-08-10* | Frank Braun</title>
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@thefrankbraun">
+<meta name="twitter:creator" content="@thefrankbraun">
+<meta property="og:title" content="*by [Frank Braun](/), 2025-08-10*">
+<meta property="og:description" content="This post is not about one particular freedom technology, but about what stays constant if everything changes — freedom technology invariants.">
+<meta property="og:image" content="https://frankbraun.org/img/frank-braun.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/css/water.css">
+<link rel="alternate" type="application/atom+xml" title="Frank Braun" href="/atom.xml">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="16x16"  href="/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32"  href="/favicon-32x32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+</head>
+<body>
+<main>
+<p><em>by <a href="/">Frank Braun</a>, 2025-08-10</em></p>
+<p>This post is not about one particular freedom technology, but about what stays constant if everything changes — freedom technology invariants.</p>
+<p>I usually define freedom technology, or <em>freedom tech</em>, as technology that is
+able to give us more personal freedom in our lifetime. And since technology is
+evolving very fast and the pace of change is likely to increase evermore it's
+easy to lose track of what's really going to matter in the long term.</p>
+<blockquote>
+<p>&quot;I very frequently get the question, 'What's going to change in the next ten
+years?' And that is a very interesting question; it's a very common one. I
+almost never get the question, 'What's not going to change in the next ten
+years?' And I submit to you that that second question is actually the more
+important of the two, because you can build a business strategy around the
+things that are stable in time.&quot;<br />
+— Jeff Bezos</p>
+</blockquote>
+<p>For Amazon the things that are not going to change in next ten years are that
+customers are going to want low prices, fast delivery, and a vast selection.</p>
+<p>Let's apply this mental model to freedom tech.</p>
+<ul>
+<li>Who are the customers?</li>
+<li>What do they want?</li>
+<li>And what &quot;invariants&quot; can we derive from their wants regarding freedom
+technology?</li>
+</ul>
+<h2><a href="#who-wants-freedom" aria-hidden="true" class="anchor" id="who-wants-freedom"></a>Who wants freedom?</h2>
+<p>Everybody is shopping, but not everybody wants to be free.</p>
+<p>So while we sell goods to everybody, we cannot sell freedom to everybody.
+Everybody is buying something, but not everybody is buying freedom. Some people
+prefer other things, like safety, and are rather content with being controlled.
+If that's wise is a different discussion.</p>
+<blockquote>
+<p>&quot;Those who would give up essential Liberty, to purchase a little temporary
+Safety, deserve neither Liberty nor Safety.&quot;<br />
+— Benjamin Franklin</p>
+</blockquote>
+<p>So what does freedom mean in the context of freedom technology?</p>
+<p><strong>I think that, for a free society, the ability to communicate and transact
+privately is essential.</strong></p>
+<p>If you don't agree, ask yourself these questions:</p>
+<ul>
+<li>If you cannot communicate in private, how can you really be free?</li>
+<li>If you cannot transact in private, how can you really be free?</li>
+</ul>
+<p>Let's assume for the sake of this discussion that our hypothetical &quot;freedom
+customer&quot; want's to communicate and transact in private.</p>
+<p>Or, more generally, let's assume that <em>free people want privacy</em>.</p>
+<blockquote>
+<p>We want privacy, because there is no freedom without it.</p>
+</blockquote>
+<h2><a href="#the-freedom-tech-stack" aria-hidden="true" class="anchor" id="the-freedom-tech-stack"></a>The freedom tech stack</h2>
+<p>In order to have the ability to communicate and transact privately we need to
+build out the <em>freedom tech stack</em>.</p>
+<p><img src="/asciiart/freedom-tech-stack.svg" alt="Freedom tech stack" /></p>
+<p>Let's go from the bottom to the top.</p>
+<h2><a href="#secure-devices" aria-hidden="true" class="anchor" id="secure-devices"></a>Secure devices</h2>
+<p>Software can only ever be as secure as the endpoint, the device it is running
+on, usually a computer or a mobile phone.</p>
+<p>If you can compromise the <a href="https://en.wikipedia.org/wiki/Endpoint_security">endpoint
+security</a> you can compromise
+all software that is running on it.</p>
+<p>Therefore it is paramount that the hardware and software of our devices is
+secure and <em>open</em>.</p>
+<p>I think it's vastly underrated how dangerous a mandate of using <a href="https://en.wikipedia.org/wiki/Trusted_Computing">attested
+applications</a> for things like
+age verification would be. In order for an application to be attestable it has
+to run on an attestable device and that usually means you are running a mobile
+phone which comes from Apple or Google with <em>their</em> OS on it and the app comes
+from <em>their</em> app store. Which means you have neither control over the OS nor
+over the software that you are running on it anymore.</p>
+<blockquote>
+<p>Invariant #1: We want to control our devices — the hardware itself and the
+software that runs on it.</p>
+</blockquote>
+<h2><a href="#secure-software" aria-hidden="true" class="anchor" id="secure-software"></a>Secure software</h2>
+<p>Even if we control our devices the software on it is only as secure the the
+entire software stack up and including the applications we run.</p>
+<p>If there are exploitable bugs in the operating system or application software we
+use then other security guarantees are moot.</p>
+<p>So everything that improves operating system and programming language
+correctness, including formal verification and tooling for better collaboration
+and package delivery, is indirectly freedom tech.</p>
+<blockquote>
+<p>Invariant #2: We want our software to be open-source and correct.</p>
+</blockquote>
+<h2><a href="#anonymous-messaging" aria-hidden="true" class="anchor" id="anonymous-messaging"></a>Anonymous messaging</h2>
+<p>The ability to communicate in private is necessary for freedom, but the secrecy
+of the communication itself is not enough.</p>
+<blockquote>
+<p>&quot;We kill people based on metadata.&quot;
+— Michael Hayden, former CIA &amp; NSA director</p>
+</blockquote>
+<p>How to achieve that is an implementation question, but keep in mind the
+<a href="https://eprint.iacr.org/2017/954.pdf">Anonymity Trilemma</a>:</p>
+<blockquote>
+<p>&quot;Strong anonymity, low bandwidth overhead, low latency — choose two&quot;</p>
+</blockquote>
+<p>But the implementation should be done with secure software running on a secure
+device, every layer of the freedom tech stack is built on the layers below it.</p>
+<blockquote>
+<p>Invariant #3: We want to be able to communicate privately and anonymously.</p>
+</blockquote>
+<h2><a href="#digital-cash" aria-hidden="true" class="anchor" id="digital-cash"></a>Digital cash</h2>
+<p>Money is defined as a medium of exchange, a unit of account, and a store of
+value which should be portable, divisible, durable, rare, and fungible.</p>
+<blockquote>
+<p>Invariant #4:  We want digital cash — anonymous money that cannot be debased,
+censored, or traced.</p>
+</blockquote>
+<h2><a href="#nyms" aria-hidden="true" class="anchor" id="nyms"></a>Nyms</h2>
+<p>Provable pseudonyms are <em>necessary</em> to build reputation systems.</p>
+<p>Expensive pseudonyms would help against bots.</p>
+<p>Pseudonyms allow to have an open discourse without the <a href="https://en.wikipedia.org/wiki/Chilling_effect">chilling
+efffect</a>.</p>
+<blockquote>
+<p>Invariant #5: We want to be able to have provable  nyms — not tied to our
+legal identity.</p>
+</blockquote>
+<h2><a href="#free-marketplaces" aria-hidden="true" class="anchor" id="free-marketplaces"></a>Free marketplaces</h2>
+<p>Free marketplaces, often wrongly named <a href="https://en.wikipedia.org/wiki/Darknet_market">darknet
+markets</a>, require the entire
+freedom tech stack discussed so far to function reliably and securely.</p>
+<p>You cannot build a pyramid on quicksand.</p>
+<blockquote>
+<p>Invariant #6: We want to be able to transact in unrestricted market places — a
+free society requires free trade.</p>
+</blockquote>
+<h2><a href="#physical-spaces" aria-hidden="true" class="anchor" id="physical-spaces"></a>Physical spaces</h2>
+<p>As physical beings we operate in the physical world.</p>
+<p>That means in order to be truly free, floating freely in cyberspace is not going
+to be enough.</p>
+<p>Whoever controls your physical environment can control you.</p>
+<blockquote>
+<p>Invariant #7: We want to be able to control our physical environment.</p>
+</blockquote>
+<h2><a href="#conclusion" aria-hidden="true" class="anchor" id="conclusion"></a>Conclusion</h2>
+<p>We want privacy, because there is no freedom without it.</p>
+<p>And in order to get privacy we are building out the <em>freedom tech stack</em>.</p>
+<p>When evaluating freedom tech we can ask ourselves these questions:</p>
+<ol>
+<li>Does it lead to more control over our own computing devices?</li>
+<li>Does it improve software openness and correctness?</li>
+<li>Does it allow us to communicate more privately and anonymously?</li>
+<li>Does it allow us to transact more freely, money wise?</li>
+<li>Does it allow us to have nyms?</li>
+<li>Does it allow us to transact more freely, in an unrestricted marketplace?</li>
+<li>Does it give us more control over our physical environment?</li>
+</ol>
+<p>The concrete technologies being built to achieve more freedom in our lifetimes
+change all the time, but these principles remain constant — they are <em>freedom
+technology invariants</em>.</p>
+<p>(<em>If you like my work, please consider <a href="/donate">making a donation</a> or <a href="/#subscribe">subscribing</a>.</em>)</p>
+</main>
+</body>
+</html>
