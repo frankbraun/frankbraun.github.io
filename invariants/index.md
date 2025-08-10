@@ -51,7 +51,7 @@ If you don't agree, ask yourself these questions:
 - If you cannot transact in private, how can you really be free?
 
 Let's assume for the sake of this discussion that our hypothetical "freedom
-customer" want's to communicate and transact in private.
+customer" wants to communicate and transact in private.
 
 Or, more generally, let's assume that *free people want privacy*.
 
