@@ -108,7 +108,7 @@ and package delivery, is indirectly freedom tech.
 The ability to communicate in private is necessary for freedom, but the secrecy
 of the communication itself is not enough.
 
->"We kill people based on metadata."
+>"We kill people based on metadata."\
 > — Michael Hayden, former CIA & NSA director
 
 How to achieve that is an implementation question, but keep in mind the
