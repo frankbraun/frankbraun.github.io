@@ -21,6 +21,10 @@ See [my "now" page](/now).
 - [Why I changed my mind on t-addresses in Zcash](/t-addr) (2025-07-11)
 - [Cryptocurrencies as Cyberstatism](/essay/cryptocurrencies-as-cyberstatism) (2020-01-06)
 
+## Talks
+
+- [Zcash 2.0 - misconceptions about unstoppable private money [PDF]](/zcash-2.0.pdf) (2025-10-04)
+
 ## Contact / Follow
 
 - Signal: [frankbraun.21](https://signal.me/#eu/9EXnQZEziD_sws3g4um2r9S8znM2ZWzIEPDs74hNo3FWVaCXDvhAx7wv4d5NB9Bn)
