@@ -24,6 +24,7 @@ See [my "now" page](/now).
 ## Talks
 
 - [Zcash 2.0 - misconceptions about unstoppable private money [PDF]](/zcash-2.0.pdf) (2025-10-04)
+- [Bitcoin in the counter-economy [PDF]](/bitcoin-in-the-counter-economy.pdf) (2012-09-16)
 
 ## Contact / Follow
 
