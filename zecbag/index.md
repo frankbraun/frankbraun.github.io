@@ -212,7 +212,7 @@ more your regular end user that values great UX and already has a Ledger.
 ## Privacy is necessary for commerce
 
 Most cryptocurrencies, including stable coins, have terrible privacy. Using them
-is leaks a lot more data (or more precisely, it leaks data to a lot more people)
+leaks a lot more data (or more precisely, it leaks data to a lot more people)
 than using wire transfers or credit card transactions.
 
 The term *public ledger* often used for blockchains gives it away: Making
