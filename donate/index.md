@@ -1,6 +1,7 @@
 # Donations
 
-If you like my work, please consider making a donation.
+If you like my work or just want to send me anonymous feedback, please consider
+sending me a Zcash transaction.
 
 ## Zcash (ZEC)
 
