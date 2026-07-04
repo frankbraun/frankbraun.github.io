@@ -25,6 +25,7 @@ See [my "now" page](/now).
 
 - Die Zukunft des Geldes (*German original*) [[PDF]](/die-zukunft-des-geldes.pdf) (2026-07-02)
 - The Future of Money (*English translation*) [[PDF]](/the-future-of-money.pdf) (2026-07-02)
+- Zcash is the future — Bitcoin is Retro [[PDF]](/zcash-is-the-future.pdf) [[YouTube]](https://www.youtube.com/watch?v=X4OMhBocI7I) (2026-04-25)
 - Zcash 2.0 — misconceptions about unstoppable private money [[PDF]](/zcash-2.0.pdf) [[YouTube]](https://www.youtube.com/watch?v=kpTcAFqWSZg) (2025-10-04)
 - Bitcoin in the counter-economy [[PDF]](/bitcoin-in-the-counter-economy.pdf) (2012-09-16)
 
