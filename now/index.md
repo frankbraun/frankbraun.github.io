@@ -6,7 +6,7 @@
 
 ## Crypto / Startup
 
-I'm building [zSTASH](https://zstash.app/), Zcash-centric desktop wallet.
+I'm building [zSTASH](https://zstash.app/), a Zcash-centric desktop wallet.
 
 ## Home
 
