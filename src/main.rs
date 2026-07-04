@@ -117,7 +117,7 @@ fn get_card(filename: &str, title: &str) -> Result<String> {
 fn build_page(filename: &str) -> Result<()> {
     let input = fs::read_to_string(filename)?;
     let mut options = Options::default();
-    options.extension.header_ids = Some(String::new());
+    options.extension.header_id_prefix = Some(String::new());
     let out = markdown_to_html(&input, &options);
     let output = filename.replace(".md", ".html");
     let title = read_first_line(filename)?;
